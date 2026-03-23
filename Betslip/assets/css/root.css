@@ -1,0 +1,57 @@
+/* ================================================
+Web Fonts
+================================================ */
+/* Montserrat */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300);
+
+/* Font Awesome */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Custom Fonts */
+@import url('fonts.css');
+
+/* Icons */
+@import url('sport-icons.css?v=gddss');
+@import url('special-icons.css?v=765');
+
+/* ================================================
+Plugin Css
+================================================ */
+/* Awesome Bootstrap Checkbox */
+@import url('plugin/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css');
+
+/* Bootstrap Select */
+@import url('plugin/bootstrap-select/bootstrap-select.css');
+
+/* Bootstrap Select */
+@import url('plugin/bootstrap-toggle/bootstrap-toggle.min.css');
+
+/* Sweet Alert */
+@import url('plugin/sweet-alert/sweet-alert.css');
+
+/* Data Tables */
+@import url('plugin/datatables/datatables.css');
+
+/* Chartist */
+@import url('plugin/chartist/chartist.min.css');
+
+/* Rickshaw */
+@import url('plugin/rickshaw/rickshaw.css');
+@import url('plugin/rickshaw/detail.css');
+@import url('plugin/rickshaw/graph.css');
+@import url('plugin/rickshaw/legend.css');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+
+/* ================================================
+Main Css
+================================================ */
+@import url('bootstrap.css');
+
+@import url('animated.css?v=18');
+@import url('color.css?v=19');
+@import url('style.css?v=1209');

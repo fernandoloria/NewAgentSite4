@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <!-- TEMPLATE KEYS -->
+  <item name="AgentSettledFigures">Agent Settled Figures</item>
+  <item name="ActionbyPlayer">Action by Player</item>
+  <item name="AgentAjustment">Agent Ajustment</item>
+  <item name="AgentCommission">Agent Commission</item>
+  <item name="PlayersStandings">All Players</item>
+  <item name="AddPlayer">Add Player</item>
+  <item name="BeatTheLine">Beat The Line</item>
+  <item name="AccessBettingKiosk">Access Betting Kiosk</item>
+  <item name="ActivePlayers">Active Players</item>
+  <item name="SubagentTransactions">Insert Subagent Transactions</item>
+  <item name="CreateWeeklyInvoice">Create Subagent Weekly Invoice</item>
+  <item name="ResellerManagement">Reseller Management</item>
+  <item name="BetTicker">Bet Ticker</item>
+  <item name="HiddenLeagues">Hidden Leagues</item>
+  <item name="WebVrsPhone">Web Vrs Phone</item>
+  <item name="PlayerBulkPayment">Player Bulk Payment</item>
+  <item name="WeeklyFigures">Weekly Figures</item>
+  <item name="CasinoFigures">Casino Figures</item>
+  <item name="HorsesFigures">Horses Figures</item>
+  <item name="PlayerTotalLostWon">Player Total Lost/Won</item>
+  <item name="HoldPercent">Hold Percent</item>
+  <item name="HoldPercentV2">Hold PercentV2</item>
+  <item name="CashFlow">Cash Flow</item>
+  <item name="GrossWeek">Gross Week</item>
+  <item name="AgentWeeklyPayments">Agent Weekly Payments</item>
+  <item name="AgentPassword">Agent Password</item>
+  <item name="PlayerTicketAlert">Real Time Bet Notification (Email)</item>
+  <item name="ApplyPlayerPayment">Apply Player Payment</item>
+  <item name="ManageMaxMoneyLines">Manage Max Money Lines</item>
+  <item name="AgentManagement">Manage Sub Agent</item>
+  <item name="PlayerManagement">OLD Manage Player</item>
+  <item name="PlayerManagementV3">Manage Player</item>
+  <item name="PlayerFreePlay">Insert Player FreePlay</item>
+  <item name="AgentAccessLog">Agent Access Log</item>
+  <item name="PlayerProfileManagement">Manage Player Profile</item>
+  <item name="PlayerProfileLimits">Manage Player Bet Limits</item>
+  <item name="AgentLineMover">Lines Control</item>
+  <item name="WagerCreator">Insert Bet</item>
+  <item name="DeleteBetsV2">Cancel Bet</item>
+  <item name="AddSubAgent">Add SubAgent</item>
+  <item name="Lotto">Lotto</item>
+  <item name="PlayerHistory">Player History</item>
+  <item name="ActionByPlayer">Action by Player</item>
+  <item name="PlayerAccess">Player Access Log</item>
+  <item name="DeleteBetsV2">Delete Bets</item>
+  <item name="AgentPlayerCount">Player Count</item>
+  <item name="Reports">Reports</item>
+  <item name="Management">Management</item>
+  <item name="Poker">Poker **NEW</item>
+  <item name="Figures">Figures</item>
+  <item name="Players">Players</item>
+  <item name="Addons">Addons</item>
+  <item name="ResellerProgram">Reseller Program</item>
+  <item name="Action">Action</item>
+  <item name="EPOS">EPOS - BETTING KIOSK</item>
+  <item name="Print">Print</item>
+  <item name="AffiliateMessage">Affiliate Message</item>
+  <item name="PickAgent">Pick Agent</item>
+  <item name="ChangePassword">Change Password</item>
+  <item name="Billing">Billing</item>
+  <item name="WagerListing">Wager Listing</item>
+  <item name="LinesSchedule">Lines Schedule</item>
+
+
+
+  <item name="CurrentAgent">Current Agent</item>
+  <item name="LastWeekMakeUp">Last Week Make Up</item>
+  <item name="OfficeBalance">Office Balance</item>
+  <item name="RequestName">Request Name</item>
+  <item name="Inbox">Inbox</item>
+
+  <item name="Schedule">Schedule</item>
+
+  <item name="AgentHistory">Agent History</item>
+  <item name="AgentDistribution">Agent Distribution</item>
+  <item name="AgentPosition">Agent Position</item>
+  <item name="AgentExposure">Agent Exposure</item>
+  <item name="RacingTickets">Racing Tickets</item>
+  <item name="Wager Listing">WagerListing</item>
+  <item name="ChangedWager">Changed Wager</item>
+  <item name="TrackPlayerActivity">Track Player Activity</item>
+  <item name="InsertBet">Insert Bet</item>
+  <item name="PendingBets">Pending Bets</item>
+  <item name="Scores">Scores</item>
+
+  <item name="PokerManagement">Poker Management</item>
+  <item name="AddNewTable">Add New Table</item>
+  <item name="PokerReport">Poker Report</item>
+
+  <item name="AddPokerTable">Add Poker Table</item>
+
+
+  <item name="GameType">Game Type</item>
+  <item name="Side">Side</item>
+  <item name="Total">Total</item>
+  <item name="MoneyLine">Money Line</item>
+  <item name="Parlays">Parlays</item>
+  <item name="Teasers">Teasers</item>
+  <item name="IfBets">If Bets</item>
+  <item name="Reverses">Reverses</item>
+  <item name="Related">Related</item>
+
+  <item name="ApplyAll">Apply All</item>
+  <item name="SaveOnlinePhone">Save Online and Phone</item>
+  <item name="Save">Save</item>
+  <item name="Reset">Reset</item>
+
+  <item name="AvailableBalance">Available Balance</item>
+  <item name="CreditLimit">Credit Limit</item>
+  <item name="Pending">Pending</item>
+  <item name="ThisWeekSports">This Week Sports</item>
+  <item name="ThisWeekHorses">This Week Horses</item>
+  <item name="ThisWeekCasino">This Week Casino</item>
+
+  <item name="Ticket">Ticket</item>
+  <item name="LinePicked">LinePicked</item>
+  <item name="CloseLine">CloseLine</item>
+
+  <item name="BulkPayment">Bulk Payment</item>
+  <item name="PutInZeros">Put In Zeros</item>
+  <item name="ClearAllBalance">Clear All Balances</item>
+  <item name="DisplayOptions">Display Options</item>
+  <item name="Method">Method</item>
+  <item name="TransactionType">Transaction Type</item>
+  <item name="TransactionDate">Transaction Date</item>
+
+
+  <item name="Thisfieldisrequired">* This field is required.</item>
+  <item name="Passwordmustmatch">* Password must match.</item>
+  <item name="SubAgentPerHeadManagement">SubAgent Per Head Management</item>
+
+
+
+  <item name="ConfirmPassword">Confirm Password</item>
+  <item name="LineType">Line Type</item>
+  <item name="Credit">Credit</item>
+
+
+  <item name="AddAgent">Add Agent</item>
+  <item name="AgentUsername">Agent Username</item>
+  <item name="MakeUp">Make Up</item>
+  <item name="CommPercent">Comm Percent</item>
+
+
+  <item name="DeleteBets">Delete Bets</item>
+  <item name="DateFrom">Date From</item>
+  <item name="DateTo">Date To</item>
+  <item name="TypeOfWager">Type Of Wager</item>
+  <item name="TypeOfSport">Type Of Sport</item>
+  <item name="PlayerName">Player Name</item>
+
+
+
+  <item name="InsertBet">Insert Bet</item>
+  <item name="PleaseSelectOnePlayer">Please select one Player</item>
+  <item name="CreateWager">Create Wager</item>
+
+
+
+
+  <item name="FreePlayerAmount">Free Player Amount</item>
+  <item name="FreePlayBalance">FreePlay Balance</item>
+  <item name="FreePlayAmount">Free Play Amount</item>
+
+
+  <item name="ApplyingNewRuleData">When applying a new rule to an agent, this rule will overwrite any previous rule under the agent</item>
+  <item name="AgentToApply">Agent to Apply</item>
+  <item name="ApplyRule">Apply Rule</item>
+
+
+  <item name="NewPassword">New Password</item>
+  <item name="CurrentPassword">Current Password</item>
+
+
+  <item name="ChangeProfileLimits">Change Profile Limits</item>
+  <item name="SetProfile">Set Profile</item>
+
+  <item name="CreateCustomProfile">Create Custom Profile</item>
+
+  <item name="PlayerManagement">Player Management</item>
+  <item name="SaveAll">Save All</item>
+
+
+
+  <item name="PlayerTicketAlert">Player Ticket Alert</item>
+  <item name="PlayerTicketNotifiedMessage">If you want to be notified of all the bets a player make, type 0 in the fields risk and win.</item>
+  <item name="PlayerTicketNotifiedMessage02">If you want to be notified when the player risk more than a certain amount, for example when risk more than 50, type 50 at risk</item>
+  <item name="PlayerTicketNotifiedMessage03">If you want to be notified when the players have a chance to win a certain amount, for example, earn more than 50, type 50 to win</item>
+
+
+  <item name="WinAmount">Win Amount</item>
+
+  <item name="MaxPlay">Max Play</item>
+  <item name="MinPlay">Min Play</item>
+
+  <item name="Reference">Reference</item>
+  <item name="User">User</item>
+  <item name="PlacedDate">Placed Date</item>
+
+  <item name="2WeeksAgo">2 Weeks Ago</item>
+  <item name="3WeeksAgo">3 Weeks Ago</item>
+  <item name="DayWeekDate">Day Week Date</item>
+
+  <item name="BalFwd">BalFwd</item>
+  <item name="Week">Week</item>
+
+
+  <item name="InitialDate">Initial Date</item>
+  <item name="EndDate">End Date</item>
+  <item name="Home">Home</item>
+  <item name="Submit">Submit</item>
+  <item name="SettledFigures">Settled Figures</item>
+  <item name="From">From</item>
+  <item name="to">To</item>
+  <item name="Agent">Agent</item>
+  <item name="Customer">Customer </item>
+  <item name="CarryOver">Carry Over</item>
+  <item name="ThisWeek">This Week</item>
+  <item name="Pmts">Pmts</item>
+  <item name="Balance">Balance</item>
+  <item name="SubTotals">SubTotals</item>
+
+  <item name="Master">Master</item>
+  <item name="Player">Player </item>
+  <item name="Password">Password</item>
+  <item name="Straight">Straight</item>
+  <item name="Parlay">Parlay</item>
+  <item name="Teaser">Teaser</item>
+  <item name="Reverse">Reverse</item>
+  <item name="Casino">Casino</item>
+  <item name="Horses">Horses</item>
+  <item name="OtherWagers">Other Wagers</item>
+  <item name="Adjustment">Adjustment</item>
+  <item name="Adjustments">Adjustments</item>
+  <item name="HorseAdjustment">Horse Adjustment</item>
+  <item name="Total">Total</item>
+  <item name="TotalPlayers">Total Players</item>
+  <item name="TotalAdjustment"> Total de Adjustes</item>
+
+
+
+  <item name="ChangeProfile">Change Profile:</item>
+  <item name="General">General</item>
+  <item name="ParlayLimits">Parlay Limits</item>
+  <item name="PitcherChangeType">Pitcher Change Type</item>
+  <item name="KeepPrice">Keep Price</item>
+  <item name="CredituselineCashadjustwinamount">Credit use line, Cash adjust win amount</item>
+  <item name="AdjustRiskAmount">Adjust Risk Amount</item>
+  <item name="AdjustWinAmount">Adjust Win Amount</item>
+  <item name="UseLine">Use Line</item>
+  <item name="MLBPitcherChange">MLB Pitcher Change</item>
+  <item name="SkipSide">Skip Side</item>
+  <item name="SkipTotal">Skip Total</item>
+  <item name="SkipRunLine">Skip Run Line</item>
+  <item name="MLBShortGame">MLB Short Game</item>
+  <item name="CancelSide">Cancel Side</item>
+  <item name="CancelTotal">Cancel Total</item>
+  <item name="CancelRunLine">Cancel Run Line</item>
+  <item name="RelatedOptionsbyGame">Related Options by Game</item>
+  <item name="Period">Period</item>
+  <item name="DuplicateBetsOptions">Duplicate Bets Options</item>
+  <item name="Checkduplicatedbetson">Check duplicate bets on</item>
+  <item name="LineChanges">Line Changes</item>
+  <item name="CheckwithStraightBets">Check with Straight Bets</item>
+  <item name="Checkwithsamedetails">Check with same details</item>
+  <item name="None">None</item>
+  <item name="CheckIfBetsReversesWithStraightBets">Check If Bets &amp; Reverses With Straight Bets</item>
+  <item name="FreePlays">Free Plays</item>
+  <item name="MaxPayout">Max Payout</item>
+  <item name="OddsLimits">Odds Limits</item>
+  <item name="Max#ofTeams">Max # of Teams</item>
+  <item name="Max#ofFavs">Max # of Favs</item>
+  <item name="AllowBothSides">Allow Both Sides</item>
+  <item name="DuplicatesBets">Duplicates Bets</item>
+  <item name="CheckOfficeFilters">Check Office Filters</item>
+  <item name="CardLimits">Card Limits</item>
+  <item name="AllowHookupsinRelatedSoccerGames">Allow Hookups in Related Soccer Games</item>
+  <item name="AllowOpenSpotsInReverses">Allow Open Spots In Reverses</item>
+  <item name="FreePlayOptions">Free Play Options</item>
+  <item name="Football">Football</item>
+  <item name="AllowOn3">Allow On 3</item>
+  <item name="AllowOff7">Allow Off 7</item>
+  <item name="CollegeFootball">College Football</item>
+  <item name="Freepoints">Free ½ points</item>
+  <item name="Baseball">Baseball</item>
+  <item name="CalcParlayspayoutwithWideline">Calc Parlays payout with Wideline</item>
+  <item name="UseWideline">Use Wideline</item>
+  <item name="MaxTimessameteamcanbeinvolvedinbets">Max Times same team can be involved in bets</item>
+  <item name="CheckthislimitonParlaysallowingonly">Check this limit on Parlays, allowing only</item>
+  <item name="times">times.</item>
+  <item name="CheckthislimitonTeasersallowingonly">Check this limit on Teasers, allowing only</item>
+  <item name="CheckthislimitonIfBetsReversesallowingonly">Check this limit on If Bets &amp; Reverses, allowing only</item>
+  <item name="CheckMoneyLineSpreadassameplayforStraightbets">Check $Line &amp; Spread as same play for Straight bets</item>
+  <item name="CheckMoneyLineSpreadassameplayforParlays">Check $Line &amp; Spread as same play for Parlays</item>
+  <item name="CheckTotalOverUnderassameplayforParlays">Check Total Over &amp; Under as same play for Parlays</item>
+  <item name="CheckTotalOverUnderassameplayforTeasers">Check Total Over &amp; Under as same play for Teasers</item>
+  <item name="CheckMoneyLineSpreadassameplayforReverses">Check $Line &amp; Spread as same play for Reverses</item>
+  <item name="CheckTotalOverUnderassameplayforReverses">Check Total Over &amp; Under as same play for Reverses</item>
+  <item name="MaxPointsforsidetotalcombinations">Max Points for side/total combinations</item>
+  <item name="BetType">Bet Type</item>
+  <item name="Basketball">Basketball</item>
+  <item name="CollegeBasketball">College Basketball</item>
+  <item name="MaxTeams">Max Teams</item>
+  <item name="BasicSports">Basic Sports</item>
+  <item name="ParlayGeneralSettings">Parlay General Settings</item>
+  <item name="TiesorLoses">Ties or Loses</item>
+  <item name="AllowOpenBets">Allow Open Bets</item>
+  <item name="UseTableOddRange">Use Table Odd Range</item>
+  <item name="IfMoneyLinethenusetrueodds">If $Line then use true odds</item>
+  <item name="AllowSpreadTotalinHockey">Allow Spread &amp; Total in Hockey</item>
+  <item name="AllowSpreadTotalinSoccer">Allow Spread &amp; Total in Soccer</item>
+  <item name="AlwaysAction">Always Action</item>
+  <item name="AllowRunLineandTotal">Allow Run Line and Total</item>
+  <item name="ParlayFormula">Parlay Formula</item>
+  <item name="TrueOdds">True Odds</item>
+  <item name="RoMild">Ro Mild</item>
+  <item name="RoTotal">Ro Total</item>
+  <item name="CheckMaxDogson">Check Max Dogs on</item>
+  <item name="ExtraSettings">Extra Settings</item>
+  <item name="MaxSides">Max Sides</item>
+  <item name="MaxBuysPoints">Max Buys Points</item>
+  <item name="HighLevelBuyPoints">High Level Buy Points</item>
+  <item name="OddsDefault">Odds Default</item>
+  <item name="OddsLimit">Odds Limit</item>
+  <item name="Stopcombinatioswithoddssumhigherthan">Stop combinatios with odds sum higher than:</item>
+
+  <item name="DogMoneyLineTotalOver">Dog Money Line / Total Over</item>
+  <item name="DogMoneyLineTotalUnder">Dog Money Line / Total Under</item>
+  <item name="FavMoneyLineTotalOver">Fav Money Line / Total Over</item>
+  <item name="FavMoneyLineTotalUnder">Fav Money Line / Total Under</item>
+  <item name="DogSpreadTotalOver">Dog Spread / Total Over</item>
+  <item name="DogSpreadTotalUnder">Dog Spread / Total Under</item>
+  <item name="FavSpreadTotalOver">Fav Spread / Total Over</item>
+  <item name="FavSpreadTotalUnder">Fav Spread / Total Under</item>
+
+
+  <item name="PointsLimit">Points Limit</item>
+
+
+
+
+
+
+
+
+
+  <item name="score">Scores</item>
+  <item name="injure">Injuries/Steam</item>
+
+
+  <!-- Misc -->
+  <item name="colon">:</item>
+
+  <item name="LiveBetting">Live Betting</item>
+  <!-- Server Error Player.Login KEYS -->
+
+  <item name="IPREG">IP address required for login.</item>
+  <item name="USRBLANK">User name cannot be blank.</item>
+  <item name="USRPASSINVALID">Invalid user name or password.</item>
+  <item name="CALLCUSTSERV">Call customer service.</item>
+  <item name="USRINVALID">Invalid user name.</item>
+  <item name="SYSNOIDCALL">The System Couldn't make and IdCall.</item>
+
+  <!-- Server Error Player.GetPlayerBalance KEYS -->
+  <item name="IDPLYNOFOUND">IdPlayer not found.</item>
+
+  <!-- Server Error Player.GetPlayerSignUp KEYS -->
+  <item name="ERRORCREATEPLAYER">The System Could'nt create your Player Account. Contact customer service.</item>
+  <item name="ERRORACCOUNTNAME">The Selected Account Name: {0} is already taken. Please choose another one and try again.</item>
+  <item name="ERROREMAIL">There is already an account with your email: {0}. Please check your email again, if the error persists then call customer service. </item>
+  <item name="ERRORBOOK">There are not book settings to create a SignUp with this WebSite. Please contact Customer Service.</item>
+
+  <!-- Server Error Wager.WagerCompile KEYS -->
+  <item name="NOALLOWOPEN">This Wager Type does not allow Open Spots.</item>
+  <item name="SELONEGAME">You have to select at least one detail.</item>
+  <item name="SELTWOGAMES">You have to select at least two details.</item>
+  <item name="PLINVNUMSELECT">Invalid Number of selected details for parlay.</item>
+  <item name="MAXOPENFORPL">The max number of open spots for a {0} team parlay is {1}.</item>
+  <item name="MAXREVDET">The max number of details for a reverse are {0}.</item>
+  <item name="MAXIFBETDET">The max number of details for an if bet are {0}.</item>
+  <item name="MAXROBINDET">The max number of details for this wagertype are {0}.</item>
+  <item name="WTNOFOUND">Invalid WagerType.</item>
+  <item name="TEASERDET">You have to select at least {0} details for the {1}.</item>
+  <item name="MAXOPENFORTEASER">The max number of open spots for this Teaser are {0}.</item>
+  <item name="IDGAMENOFOUND">The Game with the IdGame = {0} was not found on the database.</item>
+  <item name="TEASERMAXSIDE">The max number of side selections for this Teaser are {0}.</item>
+  <item name="TEASERMAXTOTAL">The max number of total selections for this Teaser are {0}.</item>
+  <item name="TEASERINVIDSPORT">This teaser does not allow {0} games.</item>
+  <item name="TEASERINVSPREAD">This teaser does not allow {0} spread games.</item>
+  <item name="TEASERINVTOTAL">This teaser does not allow {0} total games.</item>
+  <item name="TEASERINVMLINE">Teasers does not allow {0} money line games.</item>
+  <item name="WAGERTYPENOALLOWGAME">
+    This wager type does not allow the following game:<BR /> {0}
+  </item>
+  <item name="NOWAGERTRACKER">The System couldn't create a WagerTracker for your wager. Please try again later.</item>
+  <item name="FILLCOMPILE">Detail with IsOnOpenBets=True, can be used only on the FillCompile method.</item>
+  <item name="INVALIDIDCALLIDUSER">The IdUser For the Specified IdCall is invalid.</item>
+  <item name="MINKEYPARLAY">The minimum number of selections for a Key Parlay is {0}.</item>
+  <item name="EVENTHOOKUP">
+    The following game can not be hookup: <BR />{0}
+  </item>
+  <item name="MAXODDSIFREV">
+    The following game exceeds the max odds ({0}): <BR />{1}
+  </item>
+  <item name="INVSELWAGERTYPE">The sport {0} is not allow in the selected wagertype {1}.</item>
+  <item name="SELTHREEGAME">You have to select at least three details.</item>
+
+  <!-- Server Error Wager.WagerConfirm KEYS -->
+  <item name="DONTALLOWBUYPOINTS">
+    This following detail does not allow buying points :<BR /> {0}
+  </item>
+  <item name="NOCALCULATERISK">
+    The System Couldn't calculate the risk win amount. <BR /> Please try again later.
+  </item>
+  <item name="MAXWAGERONLINE">Max Wager Online Exceeded. Your Current Wager Limit is {0}.</item>
+  <item name="MINWAGERONLINE">Min Wager Online not reached. Your Current Wager Limit is {0}.</item>
+  <item name="EXCEEDMLINE">Amount In Money Line Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDTOTAL">Amount In Total Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDSIDE">Amount In Side Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDPARLAY">Amount In Parlay Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDTEASER">Amount In Teaser Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDREVERSE">Amount In Reverse Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDIFBET">Amount In If Bet Exceeded. Limit For This Game is {0}.</item>
+  <item name="NOSTRAIGHT">
+    The following detail does not allow straight bets:<BR />{0}
+  </item>
+  <item name="NOPARLAY">
+    The following detail does not allow parlay bets:<BR />{0}
+  </item>
+  <item name="NOTEASER">
+    The following detail does not allow teaser bets:<BR />{0}
+  </item>
+  <item name="NOREVERSE">
+    The following detail does not allow reverse bets:<BR />{0}
+  </item>
+  <item name="NOIFBET">
+    The following detail does not allow ifbets:<BR />{0}
+  </item>
+  <item name="IFBETCHILDHIGHER">
+    If bet childs with higher Risk Amount than the Parent are not allowed.<BR /> {0} Risking {1} is lower than <BR /> {2} Risking {3}
+  </item>
+  <item name="ILASKAMOUNT">All If bet childs should have the same Amount.</item>
+  <item name="BALANCEEXCEED">This bet can't be accepted because Balance Exceeded.</item>
+  <item name="INVALIDTEASERBUYPOINT">Invalid TeaserPointsPurchased: {0} on Teaser: {1}.</item>
+  <item name="INVALIDSECURITYHASH">Invalid Security validation.</item>
+  <item name="FREEPLAYAMTEXCEED">Your Freeplay available amount is: {0} and you are risking: {1}.</item>
+  <item name="FREEPLAYMAXTEAMEXCEED">The max number of teams for a FreePlay is: {0}.</item>
+  <item name="FREEPLAYWAGERTYPE">FreePlays are allowed on Straight, Parlay and Teaser bets only.</item>
+  <item name="FREEPLAYBOTHSIDES">FreePlays are not allowed on both sides of the same game that you already bet.</item>
+  <item name="FREEPLAYDUPLICATES">FreePlays are not allowed on the same game that you already bet.</item>
+  <item name="FREEPLAYPAYEXCEED">The Freeplay max payout amount is: {0} and you are using: {1}.</item>
+  <item name="MAXPARLAYRISKEXCEED">The max risk amount for a {0} team parlay is: {1}.</item>
+  <item name="INVCOMPACTROBINCOMBI">Please select at least one Combination.</item>
+  <item name="MINNONKEYPARLAY">The minimum number of non key selections for a Key Parlay is {0}.</item>
+  <item name="SELONEKEYPARLAY">You need to select at least one Key Game.</item>
+  <item name="FREEPLAYMAXFAVEXCEED">The max number of favorite teams for a FreePlay is: {0}.</item>
+  <item name="FREEPLAYMAXODDSEXCEED">The max odds for game in a FreePlay are: {0}.</item>
+  <item name="COMBLINERROR">Invalid combination of lines.</item>
+  <item name="MAXTIMEHKSUP">Max times that the game can be played in hookups is: {0}.</item>
+  <item name="MAXSUMODDS">Combination with odds sum higher than {0}.</item>
+
+  <!-- Server Error Wager.WagerPost KEYS -->
+  <item name="INVALIDPASSOWRD">Your password is not correct. Please try again.</item>
+  <item name="LOGINPHONE">Your are already logged in by phone, as soon as your phone session finish with our local representative you will be able to place your bet.</item>
+  <item name="ERRORPOSTING">There was an error while processing your request. Plase Try Again later</item>
+  <item name="INVALIDWAGERTRACKER">Your bet expired or has already been submited. Please check your open bets or redo your wager.</item>
+  <item name="INVALIDGAMESTATUS">
+    This bet can not be accepted, because the game has started. Please choose another one:<BR /> {0}
+  </item>
+  <item name="GAMELINECHANGE">The line changed for one (or more) of your selections.</item>
+  <item name="SLIPNOTCONFIRM">Your Wager has not been Confirm. Please Confirm your wager before Posting.</item>
+
+  <!-- Server Error Wager.WagerRemove KEYS -->
+  <item name="INVREMOVEWT">This wager type does not allow remove details.</item>
+
+  <!-- Server Error Wager.GetFillOpenWager KEYS -->
+  <item name="OPENWAGERNOFOUND">The Specified Open wager was not found.</item>
+
+  <!-- Server Error Wager.GetScheduleForGames KEYS -->
+  <item name="INVIDGAMEPARAM">The Specified IdGame(s) is not in a correct format.</item>
+
+  <!-- Server Error Wager.WagerRemove KEYS -->
+  <item name="COULDNOTBUYPOINTS">
+    The system try to update your wager with the new line but the following detail does not allow buying points anymore. Please Redo your wager. <BR />{0}
+  </item>
+  <item name="GAMEHASNOLINE">
+    The system tried to update your wager with the new line but the following detail does not have a line anymore. Please Redo your wager.<BR />{0}
+  </item>
+
+  <!-- Server Error Payment.InsertTransaction KEYS -->
+  <item name="DONTXFER">This Account ({0}) Can Not accept this type of transaction.</item>
+  <item name="NOTENABLE">This Account ({0}) is not enabled.</item>
+  <item name="NOTENABLEAGENT">The Agent for this Account ({0}) is not enabled.</item>
+  <item name="NOPAYMETHOD">{0} Payment Method not Found.</item>
+  <item name="NOTRANSAC">An Error occur while procesing your transaction.</item>
+  <item name="NOBONUS">This transaction type does not allow Bonus.</item>
+  <item name="NOFEE">This transaction type does not allow Fees.</item>
+  <item name="PLAYERNOTFOUND">The specified player ({0}) was not found.</item>
+  <item name="NEGBALANCE">This transaction can not be accepted because the Player has a negative balance.</item>
+  <item name="NOBALANCE">This transaction can not be accepted because the Player has a insuficient balance.</item>
+
+  <!-- Server Error DetailOptions.CheckBuyPoints KEYS -->
+  <item name="INVALIDBUYPOINTS">
+    This following detail specify an invalid quantity of buy points:<BR /> {0}
+  </item>
+  <item name="INVALIDPITCHER">
+    This following detail specify an invalid pitcher selection:<BR /> {0}
+  </item>
+
+  <!-- Server Error Parlay.CheckCombinationLine KEYS -->
+  <item name="PLMAXODDS">
+    The Following game exceeds the Max Odds ({0}) for a parlay<BR />{1}.
+  </item>
+  <item name="INVALIDCOMBI">
+    Invalid Combination line between:<BR /><BR />{0} <BR /> {1}
+  </item>
+  <item name="MAXSPREADGAMES">
+    You have exceed the Max number of spread lines.<BR />Your current limit is {0}.
+  </item>
+  <item name="MAXIDSPORTCNT">The Max Number of {0} games for this wager type is: {1}.</item>
+  <item name="MAXIDSPORTDOG">The Max Number of {0} dog games for this wager type is: {1}.</item>
+  <item name="MAXDOGLINES">The Maximum Number of dog games for this wager type is: {0}.</item>
+  <item name="MAXMONEYLINES">The Maximum Number of Money Line games for this wager type is: {0}.</item>
+  <item name="MAXIDSPORTMLINE">The Max Number of {0} Money Line games for this wager type is: {1}.</item>
+  <item name="MAXPSTOTAL">{0} and {1} can't be selected together. Points spread limit is: {2}.</item>
+  <item name="MAXTOTALLINES">The Maximum Number of Total Line games for this wager type is: {0}.</item>
+  <item name="MAXIDSPORTTOT">The Max Number of {0} Total Line games for this wager type is: {1}.</item>
+
+  <!-- Server Error Parlay.CheckRelatedLimit KEYS -->
+  <item name="INVALIDRELATEDLIMIT">
+    Invalid Combination (Max Related Limit is: {0} ) <BR /> {1} <BR /> {2}
+  </item>
+
+  <!-- Server Error Racing.GetRaceInfo KEYS -->
+  <item name="RACENOTFOUND">The Race with RaceID:{0} on IdProfile {1} was not found.</item>
+  <item name="NOSELECTION">You need to make a selection.</item>
+  <item name="INVDATEFORMAT">Invalid Date string format, the valid format is {0}.</item>
+  <item name="INVENTRYDATA">The following selection, has an invalid EntryData value RaceID={0} EntryNum={1}.</item>
+
+  <!-- Server Error Proxy -->
+  <item name="BADRESPONSE">
+    Bad Response from proxy:<BR />{0}
+  </item>
+
+  <!-- Server Dummy  -->
+  <item name="INVALIDVERSION">Invalid version detected: your version is {0} and server version is {1}. Please Update your interface.</item>
+
+  <!-- Home UI Link words -->
+  <item name="English">English</item>
+  <item name="Spanish">Spanish</item>
+  <item name="Home">Home</item>
+  <item name="News">News</item>
+  <item name="About">About</item>
+  <item name="Contact">Contact Us</item>
+  <item name="LiveLines">LiveLines</item>
+  <item name="Search">Search</item>
+  <item name="Login">Login</item>
+  <item name="Go">Go</item>
+  <item name="SignUp">Sign Up</item>
+  <item name="OpenBets">Pending Bets</item>
+  <item name="ManageFavorites">Manage Favorites</item>
+  <item name="History">History</item>
+  <item name="Figures">Figures</item>
+  <item name="Logout">Logout</item>
+  <item name="Sports">Sports</item>
+  <item name="Racing">Racing</item>
+  <item name="WinnerCircle">Winner Circle</item>
+  <item name="Casino">Casino</item>
+  <item name="LiveCasino">Live Casino</item>
+  <item name="ParlayCards">Parlay Cards</item>
+  <item name="MySchedule">MySchedule</item>
+  <item name="FillOpen">Fill Open</item>
+
+  <!-- Home Logged In Bet Types-->
+  <item name="BetItAll">Bet It All</item>
+  <item name="Straight">Straight</item>
+  <item name="Parlay">Parlay</item>
+  <item name="Teaser">Teaser</item>
+  <item name="RoundRobin">Round Robin</item>
+  <item name="IfWinOnly">If Win Only</item>
+  <item name="IfWinOrTie">If Win or Tie</item>
+  <item name="IfLoseOnly">If Lose Only</item>
+  <item name="IfLoseOrTie">If Lose or Tie</item>
+  <item name="WinReverse">Win Reverse</item>
+  <item name="ActionReverse">Action Reverse</item>
+  <item name="CompactRoundRobin">Compact RoundRobin</item>
+  <item name="KeyParlay">Key Parlay</item>
+  <item name="CompactIfWinOnly">Compact If Win Only</item>
+  <item name="CompactIfWinOrTie">Compact If Win or Tie</item>
+  <item name="CompactIfLoseOnly">Compact If Lose Only</item>
+  <item name="CompactIfLoseOrTie">Compact If Lose or Tie</item>
+  <item name="CompactReverseWin">Compact Reverse Win</item>
+  <item name="CompactReverseWinOrTie">Compact Reverse Win or Tie</item>
+
+  <!-- Login.aspx, ctlLogin -->
+  <item name="lblTitle">Log In</item>
+  <item name="UserName">User Name</item>
+  <item name="Password">Password</item>
+  <item name="UsernameRequired">User Name is required.</item>
+  <item name="PasswordRequired">Password is required</item>
+  <item name="login">Login</item>
+
+  <!-- Login.aspx, Responses -->
+  <item name="RemotingConfigNotLoad">Could not load RemotingConfiguration.</item>
+  <item name="RemotingServerNotConnect">Could not connect to Remoting DGSserver.</item>
+
+  <!-- Sports.aspx -->
+  <item name="SelWagerType">Select Your Wager Type On the menu</item>
+
+  <!-- SignUp.aspx-->
+  <item name="SignUpPage">Sign up Page</item>
+  <item name="EnterPass">
+    Enter the <br /> Password you <br /> would like to use
+  </item>
+  <item name="ConfirmPass">Confirm Password</item>
+  <item name="Title">Title</item>
+  <item name="Name">Name</item>
+  <item name="LastName">LastName</item>
+  <item name="Address1">Address1</item>
+  <item name="Address2">Address2</item>
+  <item name="City">City</item>
+  <item name="State">State</item>
+  <item name="ZipCode">ZipCode</item>
+  <item name="Country">Country</item>
+  <item name="Phone">Phone</item>
+  <item name="Fax">Fax</item>
+  <item name="Email">Email</item>
+  <item name="DateOfBirth">Date Of Birth</item>
+  <item name="EmailHint">(i.e.: youraccount@agivendomain.com)</item>
+  <item name="CreateAccount">Create Account</item>
+  <item name="MustEnterEmail">You must enter a valid email address.</item>
+  <item name="PasswordMatch">The Password and Confirmation Password must match.</item>
+  <item name="SignUpSuccess">
+    The Sign up process was sucessfull<br />Your Account Name is: {0} <br />
+  </item>
+  <item name="PlayNow">Play Now</item>
+  <item name="TimeZone">Time Zone</item>
+  <item name="Currency">Currency</item>
+  <item name="Source">Source</item>
+  <item name="Language">Language</item>
+  <item name="LineStyle">Line Style</item>
+
+  <!-- Logout.aspx -->
+  <item name="LogoutMsg">
+    <p>You have Succesfully Logout from the site.</p>Click <a href="Login.aspx">Here</a> to Login again
+  </item>
+
+  <!-- Figures UI Words-->
+  <item name="Item">Item</item>
+  <item name="Amount">Amount</item>
+  <item name="AccountFigures">Account Figures</item>
+  <item name="CurrentBalance">Current Balance</item>
+  <item name="AvailBalance">Available Balance</item>
+  <item name="RealBalance">Real Balance</item>
+  <item name="AmountAtRisk">Amount at Risk</item>
+  <item name="LastWeekFigure">Last Week`s Win/Loss Figure</item>
+  <item name="ThisWeekFigure">This Week`s Win/Loss Figure</item>
+  <item name="BonusPoints">Bonus Points</item>
+  <item name="FreePlay">Free Play Balance</item>
+
+  <!-- BonusPoints.xslt Words -->
+  <item name="PreviousBal">Previous Bal</item>
+  <item name="CurrentBal">Current Bal</item>
+
+  <!-- OpenBets.xslt Words -->
+  <item name="OpenWagers">Open Wagers For Player </item>
+  <item name="GameDate">GameDate</item>
+  <item name="UserPhone">User/Phone</item>
+  <item name="DatePlaced">Date Placed</item>
+  <item name="Sport">Sport</item>
+  <item name="RiskWin">Risk/Win</item>
+  <item name="NoOpenBets">No Open Bets</item>
+  <item name="ShortGame">(SHORT)</item>
+  <item name="PitcherChanged">(PCHG)</item>
+
+  <!-- History.xslt Words -->
+  <item name="HistoryFor">History for </item>
+  <item name="From">From </item>
+  <item name="To"> to </item>
+  <item name="Result">Result</item>
+  <item name="WinLoss">Win/Loss</item>
+  <item name="CashInOut">Cash In/Out</item>
+  <item name="Balance">Balance</item>
+  <item name="Beginning">BOW</item>
+  <item name="OfWeek">Of Week</item>
+  <item name="ThisWeek">View This Week</item>
+  <item name="LastWeek">View Last Week</item>
+  <item name="TotalWeek">Total Week</item>
+  <item name="TwoWeeksAgo">View 2 Weeks Ago</item>
+  <item name="ThreeWeeksAgo">View 3 Weeks Ago</item>
+  <item name="FourWeeksAgo">View 4 Weeks Ago</item>
+  <item name="FiveWeeksAgo">View 5 Weeks Ago</item>
+
+  <!-- CreateSports.xslt Words-->
+  <item name="Continue">Continue</item>
+  <item name="Clear">Clear</item>
+  <item name="ViewFavorites">Favorites</item>
+  <item name="blank"></item>
+
+
+  <!-- ChooseTeaser.xslt Words-->
+  <item name="SelectTeaserType">Select the Teaser Type Below</item>
+  <item name="NoTeaserDefined">There are no Teasers defined.</item>
+  <item name="NoLeaguesForTeaser">
+    <center>
+      <b>There are no leagues available for the seleted teaser.</b>
+    </center>
+    <BR />
+  </item>
+
+  <!-- Schedule.xslt Words-->
+  <item name="Date">Date</item>
+  <item name="Team">Team</item>
+  <item name="Pitcher">Pitcher</item>
+  <item name="RunLine">Run Line</item>
+  <item name="Spread">Spread</item>
+  <item name="Side">Side</item>
+  <item name="Total">Total</item>
+  <item name="MLine">M Line</item>
+  <item name="Goals">Goals</item>
+  <item name="Draw">Draw</item>
+  <item name="Refresh">Refresh</item>
+  <item name="CutOff">Cut Off</item>
+  <item name="Type">Type</item>
+  <item name="Description">Description</item>
+  <item name="Odds">Odds</item>
+  <item name="LinesFrom">Lines From</item>
+  <item name="NoGamesAvail">There are no games available for the Specified Leagues</item>
+  <item name="OpenSpots">Open Spots</item>
+  <item name="Add">Add</item>
+  <item name="DontAddOpenSpots">Don't Add Open Spots</item>
+  <item name="Add1OpenSpots">Add 1 Open Spot</item>
+  <item name="ShowMyConfig">Change MySchedule Configuration</item>
+  <item name="Time">Time</item>
+
+  <!-- CreateWager.xslt-->
+  <item name="WagerType">WagerType</item>
+  <item name="BuyPointsPitcher">BuyPoints / Pitcher</item>
+  <item name="Order">Order</item>
+  <item name="BuyNoPoints">Buy no points</item>
+  <item name="BuyHalfPoint">Buy half a point</item>
+  <item name="BuyOnePoint">Buy one point</item>
+  <item name="Buy">Buy</item>
+  <item name="For">for</item>
+  <item name="Action">Action</item>
+  <item name="SelecCombi">Please select a combination</item>
+  <item name="ParlayOf">Parlay of</item>
+  <item name="ParlaysOf">Parlays of</item>
+  <item name="Teams">Teams</item>
+  <item name="Sport">Sport</item>
+  <item name="UseFreePlayAmount">Use Free Play Amount</item>
+  <item name="UseSameAmount">Use same amount for All Bets</item>
+  <item name="EnterAmount">
+    Please enter the <EM>"amount"</EM> below
+  </item>
+  <item name="WagerAmount">Wager Amount</item>
+  <item name="RiskAmount">Risk Amount</item>
+  <item name="ToWinAmount">To Win Amount</item>
+  <item name="Key">Key</item>
+
+  <!-- ConfirmWager.xslt-->
+  <item name="EnterPassword">Please enter your password and click the button to confirm your wager(s).</item>
+  <item name="Risking">Risking</item>
+  <item name="ToWin">To Win</item>
+
+  <!-- PostWager.xslt-->
+  <item name="TicketNumber">Ticket#</item>
+  <item name="NotAccepted">Not Accepted</item>
+  <item name="ClickHere">Click Here</item>
+  <item name="PlaceAnother">To place another bet.</item>
+  <item name="ReviewPending">To review your pending plays and to ensure your wagers were placed correctly.</item>
+  <item name="PrintTicket">Print Ticket</item>
+  <item name="ForInsurance">For Your Insurance.</item>
+
+  <!-- ChangeWager.xslt-->
+  <item name="AcceptChanges">Accept Changes</item>
+  <item name="PrevLine">Previous Line</item>
+  <item name="CurrentLine">Current Line</item>
+
+  <!-- Ticket.xslt-->
+  <item name="Confirm">Confirm</item>
+  <item name="TicketDesc">Ticket Description</item>
+  <item name="TotalAmount">Total Amount</item>
+  <item name="SelecPosted">Your selection was posted successfully</item>
+  <item name="TicketIds">Your Tickets Id(s) are</item>
+
+  <!-- RaceTracks.xslt-->
+  <item name="SelectRace">Select a Race </item>
+  <item name="Race">Race </item>
+
+  <!-- Race.xslt-->
+  <item name="RaceOff">Race Status OFF</item>
+  <item name="AddPltoSel">Add Selection to Parlay</item>
+  <item name="CurPlSel">Current Parlay Selections</item>
+  <item name="Entry">Entry </item>
+  <item name="Remove">Remove </item>
+  <item name="Runner">Runner Name</item>
+  <item name="Jockey">Jockey</item>
+  <item name="Odds">Odds </item>
+  <item name="Purse">Purse </item>
+  <item name="WinParlay">Win Parlay</item>
+  <item name="PlaceParlay">Place Parlay</item>
+  <item name="ShowParlay">Show Parlay</item>
+  <item name="SelOneEntry">You need to select one entry</item>
+  <item name="Trainer">Trainer</item>
+
+  <!-- RaceNext.xslt-->
+  <item name="Upcoming">Upcoming Races</item>
+  <item name="RaceNum">Race #</item>
+  <item name="Post">POST</item>
+  <item name="Mtp">MTP</item>
+
+  <!-- RaceNextLive.xslt-->
+  <item name="NextRaces">Next Races in the Racebook</item>
+
+  <!-- RaceTracks.xslt-->
+  <item name="Tracks">Tracks</item>
+  <item name="FavoriteTrks">Favorite Tracks</item>
+
+  <!-- RaceTrackList -->
+  <item name="btnRemoveFav">Remove from Favorite Tracks</item>
+  <item name="btnAddFav">Add to Favorite Tracks</item>
+
+  <!-- PCardsChoose.xslt-->
+  <item name="PCardSelect">Select the Parlay Card Type Below</item>
+  <item name="PCardNoDef">There are no Parlay Cards defined.</item>
+
+  <!-- PCardsSchedule.xslt-->
+  <item name="PCardDetailFor">Parlay Cards Details for </item>
+  <item name="PCardChoose">Please Choose at least Three Teams.</item>
+
+  <!-- BalckJack.xslt-->
+  <item name="ClickHereToPlay">Click Here to Play</item>
+  <item name="NoBlackJackAccess">You dont have access to the Black Jack.</item>
+
+  <!-- FillChoose.xslt-->
+  <item name="SelecFillOpen">Please select the bet to fill</item>
+
+  <!-- FillSchedule.xslt-->
+  <item name="MaxSelOpenSpots">The maximum number of selections to fill this wager are: {0}.</item>
+
+  <!-- MyScheduleConfig.xslt-->
+  <item name="SelectLeagues">Please select the leagues you want to view</item>
+
+  <!-- DisplayError Control Words-->
+  <item name="FOLLERR">The Following Error Occurred:</item>
+  <item name="GOBACK">Go Back</item>
+
+  <!-- Web UI Schedule.aspx KEYS -->
+  <item name="SELONELG">You have to select at least one League.</item>
+
+  <!-- Web UI CreateWager.aspx KEYS -->
+  <item name="SELONEGM">You have to select at least one Game.</item>
+  <item name="CANCEL">Cancel Wager</item>
+
+  <!-- Web UI ConfirmWager.aspx KEYS -->
+  <item name="INVALIDAMT">You have to specify a valid amount.</item>
+
+  <!-- Web UI PostWager.aspx KEYS -->
+  <item name="INVALIDPASS">You have to specify a password.</item>
+
+  <!-- Web UI PCardsChoose.aspx KEYS -->
+  <item name="PCARDNOSELECTED">You need to select a parlay card.</item>
+</Resource>

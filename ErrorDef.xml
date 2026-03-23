@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XML>
+  <!-- Server Error Player.Login KEYS -->
+  <item name="IPREG">IP address required for login.</item>
+  <item name="USRBLANK">User name cannot be blank.</item>
+  <item name="USRPASSINVALID">Invalid user name or password.</item>
+  <item name="CALLCUSTSERV">Call customer service.</item>
+  <item name="USRINVALID">Invalid user name.</item>
+  <item name="SYSNOIDCALL">The System Couldn't make and IdCall.</item>
+
+  <!-- Server Error Player.GetPlayerBalance KEYS -->
+  <item name="IDPLYNOFOUND">IdPlayer not found.</item>
+  
+  <!-- Server Error Player.GetPlayerSignUp KEYS -->
+  <item name="ERRORCREATEPLAYER">The System Could'nt create your Player Account. Please try again later.</item>
+  <item name="ERRORACCOUNTNAME">The Selected Account Name: {0} is already taken. Please choose another one and try again.</item>
+  <item name="ERROREMAIL">There is already an account with the email: {0}. Please check your email again, if the error persists then call customer service. </item>
+  <item name="ERRORBOOK">There are not book settings to create a new account. Please contact Customer Service.</item>
+  
+  <!--Server Error Player.ResetPassword KEYS -->
+  <item name="ERRORLENGTH">The Password length is less that 8 characters. Try Again.</item>
+  <item name="ERRORCONFIRM">Confirm Password is incorrect. Try Again.</item>
+  <item name="ERRORGENERAL">Error Reset Player Password. Try Again.</item>
+  
+  <!-- Server Error Wager.WagerCompile KEYS -->
+  <item name="NOALLOWOPEN">This Wager Type does not allow Open Spots.</item>
+  <item name="SELONEGAME">You have to select at least one detail.</item>
+  <item name="SELTWOGAMES">You have to select at least two details.</item>
+  <item name="PLINVNUMSELECT">Invalid Number of selected details for parlay.</item>
+  <item name="MAXOPENFORPL">The max number of open spots for a {0} team parlay is {1}.</item>
+  <item name="MAXREVDET">The max number of details for a reverse are {0}.</item>
+  <item name="MAXIFBETDET">The max number of details for an if bet are {0}.</item>
+  <item name="MAXROBINDET">The max number of details for a Round Robin are {0}.</item>
+  <item name="WTNOFOUND">Invalid WagerType.</item>
+  <item name="TEASERDET">You have to select at least {0} details for the {1}.</item>
+  <item name="MAXOPENFORTEASER">The max number of open spots for this Teaser are {0}.</item>
+  <item name="IDGAMENOFOUND">The Game with the IdGame = {0} was not found on the database.</item>
+  <item name="TEASERMAXSIDE">The max number of side selections for this Teaser are {0}.</item>
+  <item name="TEASERMAXTOTAL">The max number of total selections for this Teaser are {0}.</item>
+  <item name="TEASERINVIDSPORT">This teaser does not allow {0} games.</item>
+  <item name="TEASERINVSPREAD">This teaser does not allow {0} spread games.</item>
+  <item name="TEASERINVTOTAL">This teaser does not allow {0} total games.</item>  
+  <item name="TEASERINVMLINE">Teasers does not allow {0} money line games.</item>
+  <item name="WAGERTYPENOALLOWGAME">This wager type does not allow the following game:<BR /> {0}</item>
+  <item name="NOWAGERTRACKER">The System couldn't create a WagerTracker for your wager. Please try again later.</item>
+  <item name="FILLCOMPILE">Detail with IsOnOpenBets=True, can be used only on the FillCompile method.</item>
+  <item name="INVALIDIDCALLIDUSER">The IdUser For the Specified IdCall is invalid.</item>
+  <item name="MINKEYPARLAY">The minimum number of selections for a Key Parlay is {0}.</item>
+  <item name="EVENTHOOKUP">The following game can not be hookup: <BR />{0}</item>
+  <item name="MAXODDSIFREV">The following game exceeds the max odds ({0}): <BR />{1}</item>
+  <item name="INVSELWAGERTYPE">The sport {0} is not allow in the selected wagertype {1}.</item>
+  <item name="SELTHREEGAME">You have to select at least three details.</item>
+
+  <!-- Server Error Wager.WagerConfirm KEYS -->
+  <item name="DONTALLOWBUYPOINTS">This following detail does not allow buying points :<BR /> {0}</item>
+  <item name="NOCALCULATERISK">The System Couldn't calculate the risk win amount. <BR /> Please try again later.</item>
+  <item name="MAXWAGERONLINE">Max Wager Online Exceeded. Your Current Wager Limit is {0}.</item>
+  <item name="MINWAGERONLINE">Either `Risk` or `Win` Amount is below the {0} minimum required.</item>
+  <item name="EXCEEDMLINE">Amount In Money Line Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDTOTAL">Amount In Total Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDSIDE">Amount In Side Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDPARLAY">Amount In Parlay Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDTEASER">Amount In Teaser Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDREVERSE">Amount In Reverse Exceeded. Limit For This Game is {0}.</item>
+  <item name="EXCEEDIFBET">Amount In If Bet Exceeded. Limit For This Game is {0}.</item>  
+  <item name="NOSTRAIGHT">The following detail does not allow straight bets:<BR />{0}</item>
+  <item name="NOPARLAY">The following detail does not allow parlay bets:<BR />{0}</item>  
+  <item name="NOTEASER">The following detail does not allow teaser bets:<BR />{0}</item>
+  <item name="NOREVERSE">The following detail does not allow reverse bets:<BR />{0}</item>
+  <item name="NOIFBET">The following detail does not allow ifbets:<BR />{0}</item>
+  <item name="IFBETCHILDHIGHER">If bet childs with higher Risk Amount than the Parent are not allowed.<BR /> {0} Risking {1} is lower than <BR /> {2} Risking {3}</item>
+  <item name="ILASKAMOUNT">All If bet childs should have the same Amount.</item>
+  <item name="BALANCEEXCEED">This bet can't be accepted because Balance Exceeded.</item>
+  <item name="INVALIDTEASERBUYPOINT">Invalid TeaserPointsPurchased: {0} on Teaser: {1}.</item>
+  <item name="INVALIDSECURITYHASH">Invalid Security validation.</item>
+  <item name="FREEPLAYAMTEXCEED">Your Freeplay available amount is: {0} and you are risking: {1}.</item>
+  <item name="FREEPLAYMAXTEAMEXCEED">The max number of teams for a FreePlay is: {0}.</item>
+  <item name="FREEPLAYWAGERTYPE">FreePlays are allowed on Straight, Parlay and Teaser bets only.</item>
+	<item name="FREEPLAYLEAGUEDENY">FreePlays are not allowed on for the selected league.</item>
+  <item name="FREEPLAYBOTHSIDES">FreePlays are not allowed on both sides of the same game that you already bet.</item>
+  <item name="FREEPLAYDUPLICATES">FreePlays are not allowed on the same game that you already bet.</item>
+  <item name="FREEPLAYPAYEXCEED">The Freeplay max payout amount is: {0} and you are using: {1}.</item>
+  <item name="MAXPARLAYRISKEXCEED">The max risk amount for a {0} team parlay is: {1}.</item>
+  <item name="INVCOMPACTROBINCOMBI">Please select at least one Combination.</item>
+  <item name="MINNONKEYPARLAY">The minimum number of non key selections for a Key Parlay is {0}.</item>
+  <item name="SELONEKEYPARLAY">You need to select at least one Key Game.</item>
+  <item name="FREEPLAYMAXFAVEXCEED">The max number of favorite teams for a FreePlay is: {0}.</item>
+  <item name="FREEPLAYMAXODDSEXCEED">The max odds for game in a FreePlay are: {0}.</item>
+  <item name="COMBLINERROR">Invalid combination of lines.</item>
+  <item name="MAXTIMEHKSUP">Max times that the game can be played in hookups is: {0}.</item>
+  <item name="MAXSUMODDS">Combination with odds sum higher than {0}.</item>
+  <item name="MAXTEASERRISKEXCEED">The max risk amount for a {0} team teaser is: {1}.</item>
+  
+  <!-- Server Error Wager.WagerPost KEYS -->
+  <item name="INVALIDPASSOWRD">Your password is not correct. Please try again.</item>
+  <item name="LOGINPHONE">Your are already logged in by phone, as soon as your phone session finish with our local representative you will be able to place your bet.</item>
+  <item name="ERRORPOSTING">There was an error while processing your request. Please Try Again later</item>
+  <item name="INVALIDWAGERTRACKER">Your bet expired or has already been submited. Please check your open bets or redo your wager.</item>
+  <item name="INVALIDGAMESTATUS">This bet can not be accepted, because the game has started. Please choose another one:<BR /> {0}</item>
+  <item name="GAMELINECHANGE">The line changed for one (or more) of your selections.</item>
+  <item name="SLIPNOTCONFIRM">Your Wager has not been Confirm. Please Confirm your wager before Posting.</item>
+
+  <!-- Server Error Wager.WagerRemove KEYS -->
+  <item name="INVREMOVEWT">This wager type does not allow remove details.</item>
+
+  <!-- Server Error Wager.GetFillOpenWager KEYS -->
+  <item name="OPENWAGERNOFOUND">The Specified Open wager was not found.</item>
+
+  <!-- Server Error Wager.GetScheduleForGames KEYS -->
+  <item name="INVIDGAMEPARAM">The Specified IdGame(s) is not in a correct format.</item>
+  
+  <!-- Server Error Wager.WagerRemove KEYS -->
+  <item name="COULDNOTBUYPOINTS">The system tried to update your wager with the new line but the following detail does not allow buying points anymore. Please Redo your wager.<BR />{0}</item>
+  <item name="GAMEHASNOLINE">The system tried to update your wager with the new line but the following detail does not have a line anymore. Please Redo your wager.<BR />{0}</item>
+
+  <!-- Server Error Payment.InsertTransaction KEYS -->
+  <item name="DONTXFER">This Account ({0}) can not accept this type of transaction.</item>
+  <item name="NOTENABLE">This Account ({0}) is not enabled.</item>
+  <item name="NOTENABLEAGENT">The Agent for this Account ({0}) is not enabled.</item>  
+  <item name="NOPAYMETHOD">{0} Payment Method not Found.</item>
+  <item name="NOTRANSAC">An Error occur while procesing your transaction.</item>
+  <item name="NOBONUS">This transaction type does not allow Bonus.</item>
+  <item name="NOFEE">This transaction type does not allow Fees.</item>
+  <item name="PLAYERNOTFOUND">The specified player ({0}) was not found.</item>
+  <item name="NEGBALANCE">This transaction can not be accepted because the Player has a negative balance.</item>
+  <item name="NOBALANCE">This transaction can not be accepted because the Player has a insuficient balance.</item>
+
+  <!-- Server Error DetailOptions.CheckBuyPoints KEYS -->
+  <item name="INVALIDBUYPOINTS">This following detail specify an invalid quantity of buy points:<BR /> {0}</item>
+  <item name="INVALIDPITCHER">This following detail specify an invalid pitcher selection:<BR /> {0}</item>  
+
+  <!-- Server Error Parlay.CheckCombinationLine KEYS -->
+  <item name="PLMAXODDS">The Following game exceeds the Max Odds ({0}) for parlay<BR />{1}.</item>
+  <item name="INVALIDCOMBI">Invalid Combination line between:<BR /><BR />{0} <BR /> {1}</item>
+  <item name="MAXSPREADGAMES">You have exceed the Max number of spread lines.<BR />Your current limit is {0}.</item>
+  <item name="MAXIDSPORTCNT">The Max Number of {0} games for this wager type is: {1}.</item>
+  <item name="MAXIDSPORTDOG">The Max Number of {0} dog games for this wager type is: {1}.</item>
+  <item name="MAXDOGLINES">The Maximum Number of dog games for this wager type is: {0}.</item>
+  <item name="MAXMONEYLINES">The Maximum Number of Money Line games for this wager type is: {0}.</item>
+  <item name="MAXIDSPORTMLINE">The Max Number of {0} Money Line games for this wager type is: {1}.</item>
+  <item name="MAXPSTOTAL">{0} and {1} can't be selected together. Points spread limit is: {2}.</item>
+  <item name="MAXTOTALLINES">The Maximum Number of Total Line games for this wager type is: {0}.</item>
+  <item name="MAXIDSPORTTOT">The Max Number of {0} Total Line games for this wager type is: {1}.</item>
+
+  <!-- Server Error Parlay.CheckRelatedLimit KEYS -->
+  <item name="INVALIDRELATEDLIMIT">Invalid Combination (Max Related Limit is: {0} ) <BR /> {1} <BR /> {2}</item>
+  
+  <!-- Server Error Racing.GetRaceInfo KEYS -->
+  <item name="RACENOTFOUND">The Race with RaceID:{0} on IdProfile {1} was not found.</item>
+  <item name="NOSELECTION">You need to make a selection.</item>
+  <item name="INVDATEFORMAT">Invalid Date string format, the valid format is {0}.</item>
+  <item name="INVENTRYDATA">The following selection, has an invalid EntryData value RaceID={0} EntryNum={1}.</item>
+
+  <!-- Server Error Proxy -->
+  <item name="BADRESPONSE">Bad Response from proxy:<BR />{0}</item>
+
+  <!-- Server Dummy  -->
+  <item name="INVALIDVERSION">Invalid version detected: your version is {0} and server version is {1}. Please Update your interface.</item>
+
+  <!-- Server Error Agent.Login -->
+  <item name="AIPREG">IP address required for login.</item>
+  <item name="AGLOGIN">Agent name cannot be blank.</item>
+  <item name="AGPASSW">Invalid Agent name or password.</item>
+  <item name="AGINVALID">Invalid Agent name.</item>
+  <item name="AGDISABLE">Agent disable. Contact Customer Services.</item>
+  <item name="AGNOACCESS">Agent doesnt have Online Access Contact Customer Services .</item>
+  <item name="AGCHECKSESSION">Agent already sign in. Contact Customer Services.</item>
+  <item name="MASTERAGDISABLE">Master Agent disable. Contact Customer Services.</item>
+</XML>
+

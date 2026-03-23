@@ -1,0 +1,1745 @@
+.banner-sports-img {
+    margin-bottom: 20px;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #C70500;
+}
+
+.runnerTable a {
+    color: #fff !important;
+}
+
+.page-header .phNumbers {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    min-width: 500px;
+    font-size: 12px;
+    text-align: right;
+}
+
+.sideBal {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sideBal .fa {
+    padding-right: 5px;
+}
+
+div.panel-title.linesPanelTitle h1 {
+    text-transform: uppercase;
+    font-family: 'proximacond-bold', 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background: var(--red-1);
+    z-index: 8;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    width: auto;
+    padding-left: 15px;
+    display: inline-block;
+    padding-right: 22px;
+    height: 41px;
+    padding-top: 8px;
+    margin: 20px 0;
+    box-shadow: 7px 2px 19px rgba(0, 0, 0, 0.58);
+    text-align: left;
+    top: -21px;
+}
+
+div.panel-title.linesPanelTitle h1:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 31px;
+    height: calc(103%);
+    background: var(--red-1);
+    float: right;
+    right: -15px;
+    top: 0px;
+    z-index: 10;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+    height: 41px;
+    border-right: 4px solid #35373a;
+        
+}
+
+.minus {
+    background: var(--red-1);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 0px 9px 0px;
+    margin-top: 27px;
+    margin-right: 0px;
+    top: -27px;
+}
+
+.minus li {
+    display: inline-block;
+}
+
+.minus li a.minimise-tool {
+    position: relative;
+}
+
+div.panel-title.linesPanelTitle {
+    height: 40px;
+    background: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+div.panel-title.linesSlipTitle {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    text-transform: uppercase;
+    color: #0B1629;
+    font-size: 14px;
+    padding: 8px 20px;
+}
+
+.gameDate {
+    color: #53565f;
+    background-color: #e3e3e3;
+    font-size: 11px;
+}
+
+.gameDate .text-left {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+    color: #1c1c1c;
+}
+
+.gameDate .linesBanner {
+    font-weight: 400;
+    text-align: center;
+}
+
+.gameDate .text-center {
+    font-weight: bold;
+}
+
+.linesHeader {
+    background: var(--red-1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px !important;
+    float: left;
+    text-align: center;
+}
+
+.linesEven {
+    background: #fff;
+}
+
+.elementOdd {
+    background: #f7f7f7;
+}
+
+.linesTime {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+}
+
+.linesRot {
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: center;
+}
+
+.linesTeam {
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: left;
+    overflow: auto;
+	padding: 0;
+}
+
+.classpitcher {
+    line-height: 1;
+}
+
+.linesSpread {
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: center;
+    padding: 4px;
+}
+
+.linesMl {
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: center;
+    padding: 4px;
+}
+
+.linesTotal {
+    /*border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);*/
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px !important;
+    float: left;
+    text-align: center;
+    padding: 4px;
+}
+
+.mobRot {
+    float: left;
+    margin-right: 10px;
+}
+
+.lineChange {
+    color: #C83A2A;
+    font-weight: bold;
+}
+
+.lineChangeDw {
+    color: #2ebd59;
+    font-weight: bold;
+}
+
+
+/* BETTICKER */
+
+.removeBet {
+    color: #f04122;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.BT-startHeader {
+    margin-top: 15px;
+    padding: 7px 0 3px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.BT-startmsg {
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.BT-helpMsg {
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+    padding: 0px;
+}
+
+.stFooter {
+    position: absolute;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    z-index: 10;
+}
+
+.BT-header {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 0;
+    color: #FFF;
+    background: #1c1c1c;
+    border: 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.BT-allcont {
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: #CECFD2 solid 4px;
+}
+
+.betslip .btn-sm-slip {
+    font-size: 12px;
+    padding: 7px 5px;
+}
+
+.betslip .padding-t-10 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input.BT-dkAmount, select.BT-dkAmount {
+    vertical-align: top;
+    width: 70px;
+    max-width: 70px;
+    margin-left: 2px;
+    color: #7A7979;
+    background-color: #fcfcfc;
+    /*-moz-box-shadow: inset 0 10px 5px -5px rgba(156,156,156,0.1);  -webkit-box-shadow: inset 0 10px 5px -5px rgba(156,156,156,0.1); box-shadow: inset 0 10px 5px -5px rgba(156,156,156,0.1); */
+    border: #e6e6e6 solid thin;
+    padding: 3px 5px;
+    border-radius: 4px !important;
+}
+
+select.BT-dkAmount {
+    max-width: 100%;
+    width: auto;
+}
+
+.lnSeparator {
+    background: #7a7c81;
+    height: 3px;
+}
+
+.BalanceBar {
+    background: #fff;
+    margin: -20px -30px 20px -30px;
+    padding: 0px 30px 0px 20px;
+    border-bottom: none;
+    position: relative;
+    font-size: 12px;
+}
+
+.mt-1 {
+    margin-top: 10px;
+}
+
+.mb-1 {
+    margin-bottom: 10px;
+}
+
+
+/********************** TICKET TOTALS **************************/
+
+.BT-Total {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 10px 10px 0px 10px;
+    border-top: 0;
+    -moz-box-shadow: inset 0 15px 10px -10px rgba(156, 156, 156, 0.2);
+    -webkit-box-shadow: inset 0 15px 10px -10px rgba(156, 156, 156, 0.2);
+    box-shadow: inset 0 15px 10px -10px rgba(156, 156, 156, 0.2);
+}
+
+.BT-total-header {
+    background-color: #e3e3e3;
+    color: #000;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 3px 0;
+    margin-bottom: 5px;
+    border-bottom: thin dotted #CECFD2;
+}
+
+.BT-totalSum {
+    padding: 5px 0;
+    border-bottom: thin dotted #CECFD2;
+}
+
+select.input-sm {
+    height: 24px;
+    line-height: 24px;
+}
+
+
+/***** LIVE BETTING *****/
+
+.liveBox {
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    color: #dedede;
+    padding: 30px 0px;
+}
+
+.liveBox span.gameScore {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+    color: #ffffff;
+}
+
+.nbaLiveBox {
+    background: #000 url("../img/background-basketball-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: auto;
+}
+
+.nflLiveBox {
+    background: #000 url("../img/background-football-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: 100%;
+}
+
+.nhlLiveBox {
+    background: #000 url("../img/background-hokey-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: auto;
+}
+
+.soccerLiveBox {
+    background: #000 url("../img/background-soccer-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: auto;
+}
+
+.mmaLiveBox {
+    background: #000 url("../img/background-mma-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: auto;
+}
+
+.boxLiveBox {
+    background: #000 url("../img/background-box-med.jpg") no-repeat center center;
+    background-size: 100% auto;
+    height: auto;
+}
+
+
+/* Menu Icons */
+
+
+.sport-menu {
+    background-image: url('../img/menu-sports.png');
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    background-position: -999px -999px
+}
+
+.sport-menu.badminton {
+    background-position: 0 0
+}
+
+.sport-menu.bandy {
+    background-position: -18px 0
+}
+
+.sport-menu.baseball {
+    /* background-position: -36px 0 */
+    background: url('../img/svg/baseball.svg?v=123')no-repeat; background-size: 24px 24px;
+	
+}
+
+.sport-menu.basketball {
+    /* background-position: -54px 0 */
+    background: url('../img/svg/basketball.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.beach-volleyball {
+    /* background-position: -72px 0 */
+    background: url('../img/svg/volleyball.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.boxing {
+    /* background-position: -90px 0 */
+    background: url('../img/svg/boxing.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.chess {
+    background-position: -108px 0
+}
+
+.sport-menu.cricket {
+    /* background-position: -126px 0 */
+    background: url('../img/svg/cricket.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.curling {
+    background-position: -144px 0
+}
+
+.sport-menu.darts {
+    /* background-position: -162px 0 */
+    background: url('../img/svg/darts.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.darts-legs {
+    background-position: -180px 0
+}
+
+.sport-menu.live {
+    background: url('../img/svg/live.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.e-sports {
+    background-position: -198px 0
+}
+
+.sport-menu.field-hockey {
+    background-position: -216px 0
+}
+
+.sport-menu.floorball {
+    background-position: -234px 0
+}
+
+.sport-menu.football {
+    /* background-position: -252px 0 */
+    background: url('../img/svg/american-football.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.futsal {
+    background-position: -270px 0
+}
+
+.sport-menu.golf {
+    /* background-position: -288px 0 */
+    background: url('../img/svg/golf.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.handball {
+    background-position: -306px -0px
+}
+
+.sport-menu.hockey {
+    /* background-position: -324px 0 */
+    background: url('../img/svg/hockey.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.horse-racing {
+    /* background-position: -342px 0 */
+    background: url('../img/svg/horseshoe.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.horse-2 {
+    /* background-position: -342px 0 */
+    background: url('../img/svg/horse.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.lacrosse {
+    /* background-position: -360px 0 */
+    background: url('../img/svg/lacrosse.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.mixed-martial-arts {
+    /* background-position: -378px 0 */
+    background: url('../img/svg/karate.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.other {
+    background-position: -396px 0
+}
+
+.sport-menu.politics {
+    /* background-position: -414px 0 */
+    background: url('../img/svg/debate.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.rink-hockey {
+    background-position: -432px 0
+}
+
+.sport-menu.rugby-league {
+    /* background-position: -450px 0 */
+    background: url('../img/svg/rugby.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.rugby-union {
+    background-position: -450px 0
+}
+
+.sport-menu.snooker {
+    /* background-position: -468px 0 */
+    background: url('../img/svg/pool.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.soccer {
+    /* background-position: -486px 0 */
+    background: url('../img/svg/soccer.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.squash {
+    background-position: -504px 0
+}
+
+.sport-menu.table-tennis {
+    /* background-position: -522px 0 */
+    background: url('../img/svg/ping-pong.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.tennis {
+    /* background-position: -540px 0 */
+    background: url('../img/svg/tennis-ball.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.volleyball {
+    /* background-position: -558px 0 */
+    background: url('../img/svg/volleyball.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.water-polo {
+    /* background-position: -576px 0 */
+    background: url('../img/svg/waterpolo.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.padel-tennis {
+    background-position: -594px 0
+}
+
+.sport-menu.aussie-rules-football {
+    background-position: -612px 0
+}
+
+.sport-menu.cycling {
+    /* background-position: -630px 0 */
+    background: url('../img/svg/bicycle.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.casino {
+    /* background-position: -648px 0 */
+    background: url('../img/svg/poker.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.pool {
+    background-position: -666px 0
+}
+
+.sport-menu.bowling {
+    /* background-position: -684px 0 */
+    background: url('../img/svg/bowling.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.winter-sports {
+    /* background-position: -720px 0 */
+    background: url('../img/svg/ice-skating.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.magic-the-gathering {
+    background-position: -738px 0
+}
+
+.sport-menu.sailing {
+    /* background-position: -756px 0 */
+    background: url('../img/svg/yachting.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.rowing {
+    /* background-position: -774px 0 */
+    background: url('../img/svg/rowing.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.entertainment {
+    /* background-position: -774px 0 */
+    background: url('../img/svg/televisions.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.surfing {
+    background: url('../img/svg/surf.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.formula-one {
+    background-position: -810px 0
+}
+
+.sport-menu.olympics {
+    /* background-position: -828px 0 */
+    background: url('../img/svg/olympic-games.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.athletics {
+    /* background-position: -846px 0 */
+    background: url('../img/svg/shoe.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.racing {
+    /* background-position: -864px 0 */
+    background: url('../img/svg/racing-helmet.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.motor-sport {
+    /* background-position: -882px 0 */
+    background: url('../img/svg/racing-helmet.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.esport-games {
+    /* background-position: -900px 0 */
+    background: url('../img/svg/game-controller.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+.sport-menu.swimming {
+    /* background-position: -918px 0 */
+    background: url('../img/svg/trampoline.svg?v=123')no-repeat; background-size: 24px 24px;
+}
+
+
+/* Sprites Logos */
+
+.teamnsLogos {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 4px;
+}
+
+
+/* NFL Logos */
+
+.nfl-falcons {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1px;
+    width: 25px;
+    height: 24px;
+}
+
+.nfl-buffalobills {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -55px;
+    width: 25px;
+    height: 17px;
+}
+
+.nfl-bears {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -104px;
+    width: 25px;
+    height: 17px;
+}
+
+.nfl-bengals {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -154px;
+    width: 25px;
+    height: 18px;
+}
+
+.nfl-browns {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -203px;
+    width: 23px;
+    height: 19px;
+}
+
+.nfl-cowboys {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -251px;
+    width: 24px;
+    height: 24px;
+}
+
+.nfl-broncos {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -306px;
+    width: 25px;
+    height: 15px;
+}
+
+.nfl-lions {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -353px;
+    width: 25px;
+    height: 19px;
+}
+
+.nfl-packers {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -405px;
+    width: 25px;
+    height: 17px;
+}
+
+.nfl-titans {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -454px;
+    width: 25px;
+    height: 18px;
+}
+
+.nfl-colts {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -501px;
+    width: 23px;
+    height: 24px;
+}
+
+.nfl-chiefs {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -555px;
+    width: 24px;
+    height: 16px;
+}
+
+.nfl-raiders {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -600px;
+    width: 23px;
+    height: 24px;
+}
+
+.nfl-rams {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -655px;
+    width: 25px;
+    height: 17px;
+}
+
+.nfl-dolphins {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -703px;
+    width: 24px;
+    height: 19px;
+}
+
+.nfl-vikings {
+    background: url('../img/teams-nfl-25.png') no-repeat -2px -751px;
+    width: 20px;
+    height: 24px;
+}
+
+.nfl-patriots {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -807px;
+    width: 24px;
+    height: 12px;
+}
+
+.nfl-saints {
+    background: url('../img/teams-nfl-25.png') no-repeat -3px -851px;
+    width: 19px;
+    height: 23px;
+}
+
+.nfl-giants {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -904px;
+    width: 24px;
+    height: 19px;
+}
+
+.nfl-jets {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -956px;
+    width: 24px;
+    height: 13px;
+}
+
+.nfl-eagles {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1004px;
+    width: 25px;
+    height: 18px;
+}
+
+.nfl-cardinals {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1051px;
+    width: 25px;
+    height: 23px;
+}
+
+.nfl-steelers {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -1101px;
+    width: 24px;
+    height: 24px;
+}
+
+.nfl-chargers {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1156px;
+    width: 25px;
+    height: 14px;
+}
+
+.nfl-49ers {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1206px;
+    width: 25px;
+    height: 15px;
+}
+
+.nfl-seahawks {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1258px;
+    width: 25px;
+    height: 11px;
+}
+
+.nfl-buccaneers {
+    background: url('../img/teams-nfl-25.png') no-repeat -1px -1301px;
+    width: 24px;
+    height: 21px;
+}
+
+.nfl-redskins {
+    background: url('../img/teams-nfl-25.png') no-repeat -2px -1352px;
+    width: 22px;
+    height: 23px;
+}
+
+.nfl-panthers {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1406px;
+    width: 25px;
+    height: 14px;
+}
+
+.nfl-jaguars {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1454px;
+    width: 25px;
+    height: 19px;
+}
+
+.nfl-ravens {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1607px;
+    width: 24px;
+    height: 12px;
+}
+
+.nfl-texans {
+    background: url('../img/teams-nfl-25.png') no-repeat 0 -1652px;
+    width: 24px;
+    height: 23px;
+}
+
+
+/* NBA Logos */
+
+.nba-hawks {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -4px;
+    width: 20px;
+    height: 20px;
+}
+
+.nba-celtics {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -52px;
+    width: 22px;
+    height: 22px;
+}
+
+.nba-pelicans {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -101px;
+    width: 21px;
+    height: 24px;
+}
+
+.nba-bulls {
+    background: url('../img/teams-nba-25.png') no-repeat 0 -152px;
+    width: 25px;
+    height: 23px;
+}
+
+.nba-cavaliers {
+    background: url('../img/teams-nba-25.png') no-repeat -1px -204px;
+    width: 24px;
+    height: 18px;
+}
+
+.nba-mavericks {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -252px;
+    width: 21px;
+    height: 21px;
+}
+
+.nba-nuggets {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -303px;
+    width: 20px;
+    height: 20px;
+}
+
+.nba-pistons {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -352px;
+    width: 16px;
+    height: 21px;
+}
+
+.nba-warriors {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -403px;
+    width: 20px;
+    height: 20px;
+}
+
+.nba-rockets {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -450px;
+    width: 19px;
+    height: 25px;
+}
+
+.nba-pacers {
+    background: url('../img/teams-nba-25.png') no-repeat -1px -502px;
+    width: 23px;
+    height: 21px;
+}
+
+.nba-clippers {
+    background: url('../img/teams-nba-25.png') no-repeat -5px -552px;
+    width: 16px;
+    height: 22px;
+}
+
+.nba-lakers {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -604px;
+    width: 21px;
+    height: 17px;
+}
+
+.nba-heat {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -651px;
+    width: 22px;
+    height: 23px;
+}
+
+.nba-bucks {
+    background: url('../img/teams-nba-25.png') no-repeat -4px -702px;
+    width: 17px;
+    height: 22px;
+}
+
+.nba-timberwolves {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -752px;
+    width: 21px;
+    height: 22px;
+}
+
+.nba-nets {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -802px;
+    width: 22px;
+    height: 22px;
+}
+
+.nba-knicks {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -852px;
+    width: 22px;
+    height: 22px;
+}
+
+.nba-magic {
+    background: url('../img/teams-nba-25.png') no-repeat 0 -906px;
+    width: 25px;
+    height: 14px;
+}
+
+.nba-76ers {
+    background: url('../img/teams-nba-25.png') no-repeat -1px -951px;
+    width: 24px;
+    height: 24px;
+}
+
+.nba-suns {
+    background: url('../img/teams-nba-25.png') no-repeat -1px -951px;
+    width: 24px;
+    height: 24px;
+}
+
+.nba-trail-blazers {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -1052px;
+    width: 19px;
+    height: 21px;
+}
+
+.nba-kings {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -1106px;
+    width: 22px;
+    height: 15px;
+}
+
+.nba-spurs {
+    background: url('../img/teams-nba-25.png') no-repeat -3px -1152px;
+    width: 19px;
+    height: 23px;
+}
+
+.nba-thunder {
+    background: url('../img/teams-nba-25.png') no-repeat 0 -1206px;
+    width: 25px;
+    height: 14px;
+}
+
+.nba-jazz {
+    background: url('../img/teams-nba-25.png') no-repeat 0 -1255px;
+    width: 25px;
+    height: 17px;
+}
+
+.nba-wizards {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -1302px;
+    width: 22px;
+    height: 22px;
+}
+
+.nba-raptors {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -1353px;
+    width: 22px;
+    height: 22px;
+}
+
+.nba-grizzlies {
+    background: url('../img/teams-nba-25.png') no-repeat 0 -1401px;
+    width: 25px;
+    height: 24px;
+}
+
+.nba-hornets {
+    background: url('../img/teams-nba-25.png') no-repeat -2px -1452px;
+    width: 22px;
+    height: 22px;
+}
+
+
+/* MLB Logos */
+
+.mlb-orioles {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -1px;
+    width: 25px;
+    height: 24px;
+}
+
+.mlb-red-sox {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -50px;
+    width: 19px;
+    height: 25px;
+}
+
+.mlb-angels {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -101px;
+    width: 18px;
+    height: 24px;
+}
+
+.mlb-white-sox {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -150px;
+    width: 18px;
+    height: 25px;
+}
+
+.mlb-indians {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -201px;
+    width: 18px;
+    height: 24px;
+}
+
+.mlb-tigers {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -251px;
+    width: 20px;
+    height: 24px;
+}
+
+.mlb-royals {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -301px;
+    width: 23px;
+    height: 23px;
+}
+
+.mlb-brewers {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -351px;
+    width: 21px;
+    height: 24px;
+}
+
+.mlb-twins {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -403px;
+    width: 21px;
+    height: 21px;
+}
+
+.mlb-yankees {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -450px;
+    width: 23px;
+    height: 24px;
+}
+
+.mlb-athletics {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -502px;
+    width: 25px;
+    height: 21px;
+}
+
+.mlb-mariners {
+    background: url('../img/teams-mlb-25.png') no-repeat -5px -551px;
+    width: 15px;
+    height: 24px;
+}
+
+.mlb-rangers {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -601px;
+    width: 21px;
+    height: 24px;
+}
+
+.mlb-blue-jays {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -652px;
+    width: 25px;
+    height: 22px;
+}
+
+.mlb-braves {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -704px;
+    width: 18px;
+    height: 17px;
+}
+
+.mlb-cubs {
+    background: url('../img/teams-mlb-25.png') no-repeat -1px -751px;
+    width: 23px;
+    height: 24px;
+}
+
+.mlb-reds {
+    background: url('../img/teams-mlb-25.png') no-repeat -2px -805px;
+    width: 22px;
+    height: 16px;
+}
+
+.mlb-astros {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -850px;
+    width: 25px;
+    height: 25px;
+}
+
+.mlb-dodgers {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -900px;
+    width: 20px;
+    height: 25px;
+}
+
+.mlb-nationals {
+    background: url('../img/teams-mlb-25.png') no-repeat -1px -951px;
+    width: 24px;
+    height: 24px;
+}
+
+.mlb-mets {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -1000px;
+    width: 19px;
+    height: 24px;
+}
+
+.mlb-phillies {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -1050px;
+    width: 19px;
+    height: 25px;
+}
+
+.mlb-pirates {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -1101px;
+    width: 19px;
+    height: 25px;
+}
+
+.mlb-cardinals {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -1151px;
+    width: 20px;
+    height: 24px;
+}
+
+.mlb-padres {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -1201px;
+    width: 19px;
+    height: 24px;
+}
+
+.mlb-giants {
+    background: url('../img/teams-mlb-25.png') no-repeat -4px -1251px;
+    width: 18px;
+    height: 24px;
+}
+
+.mlb-rockies {
+    background: url('../img/teams-mlb-25.png') no-repeat -3px -1301px;
+    width: 21px;
+    height: 24px;
+}
+
+.mlb-marlins {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -1350px;
+    width: 25px;
+    height: 23px;
+}
+
+.mlb-diamondbacks {
+    background: url('../img/teams-mlb-25.png') no-repeat 0 -1402px;
+    width: 25px;
+    height: 21px;
+}
+
+.mlb-rays {
+    background: url('../img/teams-mlb-25.png') no-repeat -1px -1452px;
+    width: 24px;
+    height: 22px;
+}
+
+
+/* NHL Logos */
+
+.nhl-bruins {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 0;
+    width: 25px;
+    height: 25px;
+}
+
+.nhl-sabres {
+    background: url('../img/teams-nhl-25.png') no-repeat -1px -51px;
+    width: 24px;
+    height: 24px;
+}
+
+.nhl-flames {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -102px;
+    width: 25px;
+    height: 22px;
+}
+
+.nhl-blackhawks {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -152px;
+    width: 25px;
+    height: 22px;
+}
+
+.nhl-red-wings {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -203px;
+    width: 25px;
+    height: 19px;
+}
+
+.nhl-oilers {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -251px;
+    width: 25px;
+    height: 25px;
+}
+
+.nhl-hurricanes {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -305px;
+    width: 25px;
+    height: 15px;
+}
+
+.nhl-kings {
+    background: url('../img/teams-nhl-25.png') no-repeat -3px -351px;
+    width: 20px;
+    height: 24px;
+}
+
+.nhl-stars {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -402px;
+    width: 25px;
+    height: 21px;
+}
+
+.nhl-canadiens {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -454px;
+    width: 25px;
+    height: 17px;
+}
+
+.nhl-devils {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -500px;
+    width: 25px;
+    height: 26px;
+}
+
+.nhl-islanders {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -551px;
+    width: 25px;
+    height: 24px;
+}
+
+.nhl-rangers {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -601px;
+    width: 25px;
+    height: 25px;
+}
+
+.nhl-senators {
+    background: url('../img/teams-nhl-25.png') no-repeat -2px -651px;
+    width: 20px;
+    height: 24px;
+}
+
+.nhl-flyers {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -704px;
+    width: 25px;
+    height: 18px;
+}
+
+.nhl-penguins {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -751px;
+    width: 25px;
+    height: 24px;
+}
+
+.nhl-avalanche {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -802px;
+    width: 25px;
+    height: 21px;
+}
+
+.nhl-sharks {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -852px;
+    width: 25px;
+    height: 22px;
+}
+
+.nhl-blues {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -903px;
+    width: 25px;
+    height: 20px;
+}
+
+.nhl-lightning {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -951px;
+    width: 25px;
+    height: 24px;
+}
+
+.nhl-maple-leafs {
+    background: url('../img/teams-nhl-25.png') no-repeat -1px -1000px;
+    width: 24px;
+    height: 25px;
+}
+
+.nhl-canucks {
+    background: url('../img/teams-nhl-25.png') no-repeat -2px -1052px;
+    width: 22px;
+    height: 21px;
+}
+
+.nhl-capitals {
+    background: url('../img/teams-nhl-25.png') no-repeat -1px -1104px;
+    width: 23px;
+    height: 18px;
+}
+
+.nhl-coyotes {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1150px;
+    width: 25px;
+    height: 26px;
+}
+
+.nhl-ducks {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1206px;
+    width: 25px;
+    height: 14px;
+}
+
+.nhl-panthers {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1250px;
+    width: 25px;
+    height: 25px;
+}
+
+.nhl-predators {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1306px;
+    width: 25px;
+    height: 15px;
+}
+
+.nhl-winnipeg {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1350px;
+    width: 25px;
+    height: 25px;
+}
+
+.nhl-blue-jackets {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1402px;
+    width: 25px;
+    height: 22px;
+}
+
+.nhl-wild {
+    background: url('../img/teams-nhl-25.png') no-repeat 0 -1455px;
+    width: 25px;
+    height: 16px;
+}
+
+
+/******************* Horse Racing *******************/
+
+.raceTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ececec;
+    cursor: pointer !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #2D3039;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sRaceSelected {
+    font-size: 12px;
+    font-weight: bold;
+    color: #0B1422;
+    cursor: pointer !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #cccccc;
+    padding: 2px 10px;
+    margin-right: 8px;
+}
+
+.sRaceActive {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ececec;
+    cursor: pointer !important;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #ff9900;
+    padding: 2px 10px;
+    margin-right: 8px;
+}
+
+.runnerTable>thead:first-child>tr:first-child>th {
+    background-color: #e01e12;
+    color: #ececec;
+    height: 14px;
+    padding: 6px;
+}
+
+.runnerTable>tbody>tr>td {
+    height: 14px;
+    padding: 6px;
+}
+
+input.raceIn {
+    height: 14px;
+    padding: 6px;
+}
+
+.ProgramNumberT1 {
+    background-color: #D20001;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT2 {
+    background-color: #cccccc;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT3 {
+    background-color: #2D2EFA;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT4 {
+    background-color: #E8EA31;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT5 {
+    background-color: #008001;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT6 {
+    background-color: #242424;
+    color: yellow;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT7 {
+    background-color: #FB581F;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT8 {
+    background-color: #FBAABD;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT9 {
+    background-color: #22C5C4;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT10 {
+    background-color: #8700CF;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT11 {
+    background-color: #8A8A8A;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT12 {
+    background-color: #A2DBAE;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT13 {
+    background-color: #6C4735;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT14 {
+    background-color: #5D1231;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT15 {
+    background-color: #C9C2BA;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT16 {
+    background-color: #888ABA;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT17 {
+    background-color: #2D3573;
+    color: white;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT18 {
+    background-color: #A98CFF;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT19 {
+    background-color: #FFAD5B;
+    color: black;
+    padding: 0px 5px;
+}
+
+.ProgramNumberT20 {
+    background-color: #004F4F;
+    color: white;
+    padding: 0px 5px;
+}
+
+.sidebar-panel li ul li a.horseRlink {
+    padding-left: 20px;
+}
+
+.btn-light {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* .btn-light:hover, */
+/* .btn-light:focus, */
+.btn-light.focus,
+/* .btn-light:active, */
+.btn-light.active,
+.open>.dropdown-toggle.btn-light {
+    background-color: var(--red-2);
+    color: #fff;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+}
+
+@media (hover: hover) {
+    .btn-light:hover {
+        background-color: var(--red-1);
+        color: #fff;
+        box-shadow: 0 5px 15px rgb(0 0 0 / 0.2);
+    }
+}
+
+.sidebar-panel .flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.sidebar-panel .flex-container a.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    background: #CE3626;
+    color: #FFF;
+    margin: 0 !important;
+    width: 40px;
+    right: 20px;
+    height: 35px;
+}
+
+.sidebar-panel .flex-container a.flex-item>span {
+    position: relative;
+    right: 37px;
+    bottom: 4px;
+}
+
+.betting-lines-header div {
+    display: inline-block;
+    padding: 0 23px 20px 23px;
+}
+
+@media (max-width: 992px) {
+	.nav {
+		margin-bottom: 90px;
+	}
+}

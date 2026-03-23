@@ -1,0 +1,47 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:Image runat="server" SkinID="TopBnt01" ImageUrl="images/btnMenuTop/Home_Out.jpg" Width="150" Height="30" />
+<asp:Image runat="server" SkinID="TopBnt02" ImageUrl="images/btnMenuTop/Print_Out.jpg" Width="150" Height="30" />
+<asp:Image runat="server" SkinID="TopBnt03" ImageUrl="images/btnMenuTop/LogO_Out.jpg" Width="150" Height="30" />
+
+<%--<asp:Image runat="server" SkinID="ProcessImg" ImageUrl="images/TimerWait.gif" Width="30" Height="30" />--%>
+<asp:Image runat="server" SkinID="newProcessImg" ImageUrl="images/loading.gif" Width="441" Height="291" />
+<asp:Image runat="server" SkinID="dot" ImageUrl="images/dot.gif" Width="10" Height="10" />
+
+<asp:Image runat="server" SkinID="TopBnt01ML" ImageUrl="images/btnMenuTop/Report_Out.jpg" Width="200" Height="30" />
+<asp:Image runat="server" SkinID="TopBnt02ML" ImageUrl="images/btnMenuTop/LogO_Out.jpg" Width="200" Height="30" />
+
+<asp:Image runat="server" SkinID="MenuLeft" ImageUrl="images/MenuList/StaticHoverLeft.jpg" Width="10" Height="30" />
+<asp:Image runat="server" SkinID="MenuRight" ImageUrl="images/MenuList/StaticHoverRight.jpg" Width="10" Height="30" />
+
+<asp:Image runat="server" SkinID="TopWith01" ImageUrl="images/TopWithMenu/bgTopWithMenu_r1_c1.jpg" Width="204" Height="53" />
+<asp:Image runat="server" SkinID="TopWith02" ImageUrl="images/TopWithMenu/bgTopWithMenu_r1_c2_Out.jpg" Width="131" Height="53" />
+<asp:Image runat="server" SkinID="TopWith03" ImageUrl="images/TopWithMenu/bgTopWithMenu_r1_c3_Out.jpg" Width="131" Height="53" />
+<asp:Image runat="server" SkinID="TopWith04" ImageUrl="images/TopWithMenu/bgTopWithMenu_r1_c4_Out.jpg" Width="131" Height="53" />
+<asp:Image runat="server" SkinID="TopWith05" ImageUrl="images/TopWithMenu/bgTopWithMenu_r1_c5.jpg" Width="53" Height="53" />
+
+<asp:Image runat="server" SkinID="TopWithS01" ImageUrl="images/TopWithMenu02/TopWithMenu02_r1_c1.jpg" Width="590" Height="9" />
+<asp:Image runat="server" SkinID="TopWithS02" ImageUrl="images/TopWithMenu02/TopWithMenu02_r1_c2.jpg" Width="60" Height="9" />
+
+<asp:Image runat="server" SkinID="TopWithS03" ImageUrl="images/TopWithMenu02/TopWithMenu02_r2_c1.jpg" Width="590" Height="141" />
+<asp:Image runat="server" SkinID="TopWithS04" ImageUrl="images/TopWithMenu02/TopWithMenu02_r2_c2_Out.jpg" Width="60" Height="46" />
+<asp:Image runat="server" SkinID="TopWithS05" ImageUrl="images/TopWithMenu02/TopWithMenu02_r3_c2.jpg" Width="60" Height="1" />
+<asp:Image runat="server" SkinID="TopWithS06" ImageUrl="images/TopWithMenu02/TopWithMenu02_r4_c2_Out.jpg" Width="60" Height="46" />
+<asp:Image runat="server" SkinID="TopWithS07" ImageUrl="images/TopWithMenu02/TopWithMenu02_r5_c2.jpg" Width="60" Height="1" />
+<asp:Image runat="server" SkinID="TopWithS08" ImageUrl="images/TopWithMenu02/TopWithMenu02_r6_c2_Out.jpg" Width="60" Height="46" />
+<asp:Image runat="server" SkinID="TopWithS09" ImageUrl="images/TopWithMenu02/TopWithMenu02_r7_c2.jpg" Width="60" Height="1" />
+
+<asp:Image runat="server" SkinID="TopWithSSep" ImageUrl="images/TopWithMenu02/Sep02.jpg" Width="60" Height="150" />

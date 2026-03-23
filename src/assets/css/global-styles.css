@@ -1,0 +1,227 @@
+﻿#loading {
+    background: url(/src/assets/img/sports.gif) rgba(0,0,0,.815) no-repeat center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1999;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px)
+}
+
+
+
+
+
+
+    .table-sm td, .table-sm th {
+        padding-left: .1rem;
+        padding-right: .1rem;
+    }
+
+    .card {
+        --bs-card-spacer-x: 0;
+        --bs-card-spacer-y: 0;
+    }
+
+        .card .card-body {
+            padding: unset !important;
+        }
+}
+
+@media (max-width: 480px) {
+    .wbtable td {
+        font-size: 6.5px;
+    }
+
+    .wbtable.wb-smallFont td {
+        font-size: 6px !important;
+    }
+}
+
+.NumPositive, .pos, .pos a {
+    color: green;
+    font-weight: bold;
+}
+
+.NumNegative, .neg, .neg a {
+    color: #F00;
+    font-weight: bold;
+}
+
+
+td {
+    padding-left: 5px;
+}
+
+.table tr.trAgent, .table-striped thead tr, .page-titles th {
+    --bs-table-bg: #0e1726;
+    --bs-table-accent-bg: #0e1726;
+    --bs-table-color: #fff;
+    --bs-table-color-type: #fff;
+    --bs-table-color-state: #fff;
+}
+
+    .table tr.trAgent > * {
+        color: var(--bs-table-color) !important;
+    }
+
+    .table tr.trAgent .text-dark,
+    .table tr.trAgent .text-secondary,
+    .table tr.trAgent .text-muted {
+        color: var(--bs-table-color) !important;
+    }
+
+    .table tr.trAgent .badge {
+        background-color: rgba(255,255,255,.15);
+        color: #fff !important;
+    }
+
+.table-title, .table-title td {
+    background-color: #30567A !important;
+}
+
+    .table-title h4, .trAgent h4, .page-titlesChartTD {
+        color: #fff !important;
+    }
+
+
+.table tr.trAgent a,
+.table-striped thead tr a,
+.page-titles th a,
+.table tr.trAgent a:visited,
+.table-striped thead tr a:visited,
+.page-titles th a:visited,
+.table tr.trAgent a:hover,
+.table-striped thead tr a:hover,
+.page-titles th a:hover,
+.table tr.trAgent a:focus,
+.table-striped thead tr a:focus,
+.page-titles th a:focus,
+.table tr.trAgent a:active,
+.table-striped thead tr a:active,
+.page-titles th a:active {
+    color: #fff !important;
+    text-decoration: none; /* quita subrayado; quítalo si quieres ver el hover subrayado */
+}
+
+#sidebar ul.menu-categories ul.submenu > li a {
+    margin-left: unset !important;
+}
+
+
+
+#userList {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 40px;
+    z-index: 1050;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    max-height: 320px;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    padding: 6px 0;
+}
+
+    #userList ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #userList li {
+        display: block;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
+
+        #userList li:hover, #userList li.active {
+            background: #f3f4f6;
+        }
+
+.pill {
+    font-size: 11px;
+    line-height: 1;
+    padding: 4px 6px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    min-width: 20px;
+    text-align: center;
+}
+
+.muted {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.acc {
+    font-weight: 600;
+}
+
+.name {
+    color: #374151;
+}
+
+
+.type-p {
+    color: green;
+    margin-right: 10px;
+    float: right;
+}
+
+.type-m {
+    color: red;
+    margin-right: 10px;
+    float: right;
+}
+
+.type-a {
+    color: orange;
+    margin-right: 10px;
+    float: right;
+}
+
+.type-d {
+    color: black;
+    font-weight: 900;
+}
+
+
+
+.page-titles {
+    background-color: #30567A !important;
+    border: 1px solid #e0e6ed;
+    border-radius: 10px;
+    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+    padding-top: 14px;
+    padding-bottom: 9px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+    .page-titles h4, .page-titles h3 {
+        color: white !important;
+        text-align: center !important;
+
+    }
+
+.topbar {
+    background: #808080;
+}
+
+.modal-content {
+    background: var(--bs-body-bg) !important;
+    
+}
+
+body.dark .modal-content {
+    background: #191e3a !important;
+}
+

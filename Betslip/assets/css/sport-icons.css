@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'sports';
+    src: url('../fonts/sports.eot?v=01');
+    src: url('../fonts/sports.eot?v=01') format('embedded-opentype'),
+         url('../fonts/sports.woff?v=01') format('woff'),
+         url('../fonts/sports.ttf?v=01') format('truetype'),
+         url('../fonts/sports.svg?v=01') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='gly-']:before{
+	display: inline-block;
+   font-family: 'sports';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+
+.gly-sports:before{content:'\0041';}
+.gly-casino:before{content:'\0070';}
+.gly-livecasino:before{content:'\0071';}
+.gly-live:before{content:'\0043';}
+.gly-mail:before{content:'\0044';}
+.gly-horses:before{content:'\0045';}
+.gly-score:before{content:'\0046';}
+.gly-avatar:before{content:'\0047';}
+.gly-profile:before{content:'\0048';}
+.gly-settings:before{content:'\0049';}
+.gly-power-button:before{content:'\004a';}
+.gly-power:before{content:'\004b';}
+.gly-sort:before{content:'\004c';}
+.gly-monitor:before{content:'\004d';}
+.gly-computer-screen:before{content:'\004e';}
+.gly-artistic-brush:before{content:'\004f';}
+.gly-magnifying-glass:before{content:'\0050';}
+.gly-translator:before{content:'\0051';}
+.gly-language:before{content:'\0052';}
+.gly-list:before{content:'\0053';}
+.gly-menu:before{content:'\0054';}
+.gly-home:before{content:'\0055';}
+.gly-home-a:before{content:'\0056';}
+.gly-house-outline:before{content:'\0057';}
+.gly-menu-a:before{content:'\0058';}
+.gly-menu-b:before{content:'\0059';}
+.gly-menu-c:before{content:'\005a';}
+.gly-scoreboard:before{content:'\0062';}
+.gly-scoreboard-a:before{content:'\0063';}
+.gly-loading:before{content:'\0064';}
+.gly-reload:before{content:'\0065';}
+.gly-down-arrow:before{content:'\0066';}
+.gly-cancel:before{content:'\0067';}
+.gly-cross:before{content:'\0068';}
+.gly-shuffle:before{content:'\0069';}
+.gly-right-arrow:before{content:'\006a';}
+.gly-angle-arrow-pointing-down:before{content:'\006b';}
+.gly-down-chevron:before{content:'\006c';}
+.gly-chip:before{content:'\0070';}
+.gly-card-game:before{content:'\0071';}
