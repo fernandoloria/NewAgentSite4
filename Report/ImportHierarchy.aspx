@@ -228,12 +228,40 @@
                     </div>
                 </div>
 
+                <div class="row mb-2">
+                    <div class="col-md-2">
+                        <label>Duplicate fix</label>
+                        <asp:DropDownList ID="ddlDuplicateAffixMode" runat="server"
+                            CssClass="form-control form-control-sm">
+                            <asp:ListItem Text="Suffix" Value="SUFFIX" Selected="True"></asp:ListItem>
+                            <asp:ListItem Text="Prefix" Value="PREFIX"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Prefix/Suffix</label>
+                        <asp:TextBox ID="txtDuplicateAffix" runat="server"
+                            CssClass="form-control form-control-sm"
+                            MaxLength="6"
+                            Text="D">
+                        </asp:TextBox>
+                    </div>
+                    <div class="col-md-8 d-flex align-items-end">
+                        <span class="import-help mb-2">Mass Fix adds this prefix or suffix plus a number to duplicated/existing accounts.</span>
+                    </div>
+                </div>
+
                 <div class="row mb-3">
                     <div class="col-md-12">
                         <asp:Button ID="btnRevalidate" runat="server"
                             Text="Revalidate Batch"
                             CssClass="btn btn-primary"
                             OnClick="btnRevalidate_Click" />
+
+                        <asp:Button ID="btnMassFix" runat="server"
+                            Text="Mass Fix: apply prefix/suffix to duplicates, OPEN blank passwords, zero bad credit, clone wager limits"
+                            CssClass="btn btn-warning ml-2"
+                            CausesValidation="false"
+                            OnClick="btnMassFix_Click" />
 
                         <asp:Button ID="btnNewImport" runat="server"
                             Text="Start New Import"
