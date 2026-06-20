@@ -189,7 +189,7 @@ namespace AgentSite4.Report
             try
             {
                 EnsureCurrentBatch();
-                string duplicateAffix = NormalizeDuplicateAffix(txtDuplicateAffix.Text);
+                string duplicateAffix = NormalizeDuplicateAffix(GetControlText("txtDuplicateAffix"));
                 string duplicateAffixMode = GetDuplicateAffixMode();
                 MassFixBatch(CurrentImportHierarchyId, duplicateAffixMode, duplicateAffix);
                 ValidateBatch(CurrentImportHierarchyId);
@@ -1516,11 +1516,42 @@ namespace AgentSite4.Report
             gvPlayers.PageIndex = 0;
         }
 
+        private string GetControlText(string controlId)
+        {
+            TextBox textBox = FindPageControl(controlId) as TextBox;
+            return textBox == null ? String.Empty : textBox.Text;
+        }
+
+        private Control FindPageControl(string controlId)
+        {
+            return FindPageControlRecursive(Page, controlId);
+        }
+
+        private static Control FindPageControlRecursive(Control parent, string controlId)
+        {
+            if (parent == null)
+                return null;
+
+            Control found = parent.FindControl(controlId);
+            if (found != null)
+                return found;
+
+            foreach (Control child in parent.Controls)
+            {
+                found = FindPageControlRecursive(child, controlId);
+                if (found != null)
+                    return found;
+            }
+
+            return null;
+        }
+
         private string GetDuplicateAffixMode()
         {
-            string mode = Convert.ToString(
-                ddlDuplicateAffixMode.SelectedValue,
-                CultureInfo.InvariantCulture);
+            DropDownList modeList = FindPageControl("ddlDuplicateAffixMode") as DropDownList;
+            string mode = modeList == null
+                ? String.Empty
+                : Convert.ToString(modeList.SelectedValue, CultureInfo.InvariantCulture);
 
             return String.Equals(mode, "PREFIX", StringComparison.OrdinalIgnoreCase)
                 ? "PREFIX"
