@@ -51,6 +51,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -556,6 +558,7 @@
     <Content Include="Report\App-Chat.aspx" />
     <Content Include="Report\BetTicker.aspx" />
     <Content Include="Report\DashboardSettings.aspx" />
+    <Content Include="Report\ImportHierarchy.aspx" />
     <Content Include="Report\LineAdvantage.aspx" />
     <Content Include="Report\MenuConfiguration.aspx" />
     <Content Include="Report\NoFreePlayAvailableBalance.aspx" />
@@ -5752,6 +5755,13 @@
     </Compile>
     <Compile Include="Report\HoldPercentV2.aspx.designer.cs">
       <DependentUpon>HoldPercentV2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ImportHierarchy.aspx.cs">
+      <DependentUpon>ImportHierarchy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\ImportHierarchy.aspx.designer.cs">
+      <DependentUpon>ImportHierarchy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Report\LimitsProfile.aspx.cs">
       <DependentUpon>LimitsProfile.aspx</DependentUpon>
