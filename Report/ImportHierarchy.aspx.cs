@@ -183,6 +183,27 @@ namespace AgentSite4.Report
             }
         }
 
+
+        protected void btnMassFix_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EnsureCurrentBatch();
+                string duplicateAffix = NormalizeDuplicateAffix(GetControlText("txtDuplicateAffix"));
+                string duplicateAffixMode = GetDuplicateAffixMode();
+                MassFixBatch(CurrentImportHierarchyId, duplicateAffixMode, duplicateAffix);
+                ValidateBatch(CurrentImportHierarchyId);
+                AdjustFilterAfterValidation(CurrentImportHierarchyId);
+                ResetGridPosition();
+                ShowBatch(CurrentImportHierarchyId);
+                lblMessage.Text = "Mass Fix completed: duplicated agent/player accounts were renamed with the selected " + duplicateAffixMode.ToLowerInvariant() + " '" + Server.HtmlEncode(duplicateAffix) + "' plus a number, blank player passwords were set to OPEN, missing/invalid credit limits were set to 0, and wager ranges where max was lower than min were reset from the selected player template. Players with password OPEN must be imported with OnlineAccess disabled.";
+            }
+            catch (Exception ex)
+            {
+                lblError.Text = Server.HtmlEncode(ex.Message);
+            }
+        }
+
         protected void btnNewImport_Click(object sender, EventArgs e)
         {
             Session.Remove(SessionImportHierarchyId);
@@ -890,11 +911,11 @@ namespace AgentSite4.Report
                 GetColumnValue(columns, values, "IdPlayer"));
             row.Player = NormalizeExcelAccount(
                 GetColumnValue(columns, values, "Player"));
-            row.PlayerPassword = GetColumnValue(
+            row.PlayerPassword = GetDefaultPlayerPassword(GetColumnValue(
                 columns,
                 values,
-                "Player_Password");
-            row.CreditLimit = ParseNullableDecimalValue(
+                "Player_Password"));
+            row.CreditLimit = ParseCreditLimit(
                 GetColumnValue(columns, values, "CreditLimit"));
             row.MinWager = ParseNullableDecimalValue(
                 GetColumnValue(columns, values, "MinWager"));
@@ -966,6 +987,17 @@ namespace AgentSite4.Report
             }
 
             return null;
+        }
+
+        private static string GetDefaultPlayerPassword(string value)
+        {
+            return String.IsNullOrWhiteSpace(value) ? "OPEN" : value.Trim();
+        }
+
+        private static decimal? ParseCreditLimit(string value)
+        {
+            decimal? parsed = ParseNullableDecimalValue(value);
+            return parsed.HasValue ? parsed.Value : 0M;
         }
 
         private static decimal? ParseNullableDecimalValue(string value)
@@ -1482,6 +1514,253 @@ namespace AgentSite4.Report
             gvPlayers.EditIndex = -1;
             gvAgents.PageIndex = 0;
             gvPlayers.PageIndex = 0;
+        }
+
+        private string GetControlText(string controlId)
+        {
+            TextBox textBox = FindPageControl(controlId) as TextBox;
+            return textBox == null ? String.Empty : textBox.Text;
+        }
+
+        private Control FindPageControl(string controlId)
+        {
+            return FindPageControlRecursive(Page, controlId);
+        }
+
+        private static Control FindPageControlRecursive(Control parent, string controlId)
+        {
+            if (parent == null)
+                return null;
+
+            Control found = parent.FindControl(controlId);
+            if (found != null)
+                return found;
+
+            foreach (Control child in parent.Controls)
+            {
+                found = FindPageControlRecursive(child, controlId);
+                if (found != null)
+                    return found;
+            }
+
+            return null;
+        }
+
+        private string GetDuplicateAffixMode()
+        {
+            DropDownList modeList = FindPageControl("ddlDuplicateAffixMode") as DropDownList;
+            string mode = modeList == null
+                ? String.Empty
+                : Convert.ToString(modeList.SelectedValue, CultureInfo.InvariantCulture);
+
+            return String.Equals(mode, "PREFIX", StringComparison.OrdinalIgnoreCase)
+                ? "PREFIX"
+                : "SUFFIX";
+        }
+
+        private static string NormalizeDuplicateAffix(string value)
+        {
+            string affix = (value ?? String.Empty).Trim();
+            if (affix.Length == 0)
+                affix = "D";
+
+            if (affix.Length > 6)
+                affix = affix.Substring(0, 6);
+
+            for (int index = 0; index < affix.Length; index++)
+            {
+                char character = affix[index];
+                if (!Char.IsLetterOrDigit(character) && character != '_' && character != '.')
+                {
+                    throw new ApplicationException(
+                        "The duplicate prefix/suffix may contain only letters, numbers, underscores, and periods.");
+                }
+            }
+
+            return affix;
+        }
+
+        private void MassFixBatch(
+            long idImportHierarchy,
+            string duplicateAffixMode,
+            string duplicateAffix)
+        {
+            int idPlayerClone = GetBatchPlayerClone(idImportHierarchy);
+            decimal templateMinWager;
+            decimal templateMaxWager;
+            decimal templateOnlineMinWager;
+            decimal templateOnlineMaxWager;
+            GetPlayerTemplateWagers(
+                idPlayerClone,
+                out templateMinWager,
+                out templateMaxWager,
+                out templateOnlineMinWager,
+                out templateOnlineMaxWager);
+
+            using (SqlConnection connection = CreateAddOnsConnection())
+            using (SqlCommand command = new SqlCommand(
+                @"CREATE TABLE #AgentFix
+                  (
+                      OldAgentAccount varchar(100) NOT NULL,
+                      NewAgentAccount varchar(100) NOT NULL
+                  );
+
+                  ;WITH AgentFix AS
+                  (
+                      SELECT
+                          IA.IdImportAgent,
+                          IA.AgentAccount AS OldAgentAccount,
+                          NewAgentAccount = CASE
+                              WHEN @DuplicateAffixMode = 'PREFIX' THEN
+                                  LEFT(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IA.SourceRowNumber, IA.IdImportAgent)) + IA.AgentAccount, 100)
+                              ELSE
+                                  LEFT(
+                                      IA.AgentAccount,
+                                      CASE
+                                          WHEN 100 - LEN(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IA.SourceRowNumber, IA.IdImportAgent))) < 1 THEN 1
+                                          ELSE 100 - LEN(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IA.SourceRowNumber, IA.IdImportAgent)))
+                                      END) + @DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IA.SourceRowNumber, IA.IdImportAgent))
+                          END
+                      FROM dbo.ImportHierarchyAgent IA
+                      WHERE IA.IdImportHierarchy = @IdImportHierarchy
+                        AND (IA.ExistsInDatabase = 1 OR IA.IsDuplicatedInFile = 1)
+                  )
+                  INSERT INTO #AgentFix (OldAgentAccount, NewAgentAccount)
+                  SELECT OldAgentAccount, NewAgentAccount
+                  FROM AgentFix;
+
+                  UPDATE IA
+                  SET
+                      AgentAccount = AF.NewAgentAccount,
+                      ExistingIdAgent = NULL,
+                      IsValid = NULL,
+                      ExistsInDatabase = 0,
+                      IsDuplicatedInFile = 0,
+                      ValidationMessage = NULL,
+                      ImportStatus = 'PENDING',
+                      ImportMessage = NULL
+                  FROM dbo.ImportHierarchyAgent IA
+                  INNER JOIN #AgentFix AF
+                      ON UPPER(LTRIM(RTRIM(AF.OldAgentAccount))) COLLATE DATABASE_DEFAULT =
+                         UPPER(LTRIM(RTRIM(IA.AgentAccount))) COLLATE DATABASE_DEFAULT
+                  WHERE IA.IdImportHierarchy = @IdImportHierarchy;
+
+                  ;WITH PlayerFix AS
+                  (
+                      SELECT
+                          IP.IdImportPlayer,
+                          NewPlayerAccount = CASE
+                              WHEN @DuplicateAffixMode = 'PREFIX' THEN
+                                  LEFT(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IP.SourceRowNumber, IP.IdImportPlayer)) + IP.PlayerAccount, 10)
+                              ELSE
+                                  LEFT(
+                                      IP.PlayerAccount,
+                                      CASE
+                                          WHEN 10 - LEN(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IP.SourceRowNumber, IP.IdImportPlayer))) < 1 THEN 1
+                                          ELSE 10 - LEN(@DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IP.SourceRowNumber, IP.IdImportPlayer)))
+                                      END) + @DuplicateAffix + CONVERT(varchar(20), ROW_NUMBER() OVER (ORDER BY IP.SourceRowNumber, IP.IdImportPlayer))
+                          END
+                      FROM dbo.ImportHierarchyPlayer IP
+                      WHERE IP.IdImportHierarchy = @IdImportHierarchy
+                        AND (IP.ExistsInDatabase = 1 OR IP.IsDuplicatedInFile = 1)
+                  )
+                  UPDATE IP
+                  SET
+                      AgentAccount = ISNULL(AF.NewAgentAccount, IP.AgentAccount),
+                      PlayerAccount = ISNULL(PF.NewPlayerAccount, IP.PlayerAccount),
+                      PlayerPassword = CASE WHEN IP.PlayerPassword IS NULL OR LTRIM(RTRIM(IP.PlayerPassword)) = '' THEN N'OPEN' ELSE IP.PlayerPassword END,
+                      CreditLimit = CASE WHEN IP.CreditLimit IS NULL OR IP.CreditLimit < 0 THEN 0 ELSE IP.CreditLimit END,
+                      MinWager = CASE WHEN IP.MinWager IS NOT NULL AND IP.MaxWager IS NOT NULL AND IP.MinWager > IP.MaxWager THEN @TemplateMinWager ELSE IP.MinWager END,
+                      MaxWager = CASE WHEN IP.MinWager IS NOT NULL AND IP.MaxWager IS NOT NULL AND IP.MinWager > IP.MaxWager THEN @TemplateMaxWager ELSE IP.MaxWager END,
+                      OnlineMinWager = CASE WHEN IP.OnlineMinWager IS NOT NULL AND IP.OnlineMaxWager IS NOT NULL AND IP.OnlineMinWager > IP.OnlineMaxWager THEN @TemplateOnlineMinWager ELSE IP.OnlineMinWager END,
+                      OnlineMaxWager = CASE WHEN IP.OnlineMinWager IS NOT NULL AND IP.OnlineMaxWager IS NOT NULL AND IP.OnlineMinWager > IP.OnlineMaxWager THEN @TemplateOnlineMaxWager ELSE IP.OnlineMaxWager END,
+                      ExistingIdPlayer = NULL,
+                      IsValid = NULL,
+                      ExistsInDatabase = 0,
+                      IsDuplicatedInFile = 0,
+                      ValidationMessage = NULL,
+                      ImportStatus = 'PENDING',
+                      ImportMessage = CASE WHEN (IP.PlayerPassword IS NULL OR LTRIM(RTRIM(IP.PlayerPassword)) = '' OR UPPER(LTRIM(RTRIM(IP.PlayerPassword))) = 'OPEN') THEN 'Mass Fix: password OPEN; import with OnlineAccess disabled.' ELSE NULL END
+                  FROM dbo.ImportHierarchyPlayer IP
+                  LEFT JOIN #AgentFix AF
+                      ON UPPER(LTRIM(RTRIM(AF.OldAgentAccount))) COLLATE DATABASE_DEFAULT =
+                         UPPER(LTRIM(RTRIM(IP.AgentAccount))) COLLATE DATABASE_DEFAULT
+                  LEFT JOIN PlayerFix PF ON PF.IdImportPlayer = IP.IdImportPlayer
+                  WHERE IP.IdImportHierarchy = @IdImportHierarchy
+                    AND (PF.IdImportPlayer IS NOT NULL
+                         OR AF.NewAgentAccount IS NOT NULL
+                         OR IP.PlayerPassword IS NULL
+                         OR LTRIM(RTRIM(IP.PlayerPassword)) = ''
+                         OR IP.CreditLimit IS NULL
+                         OR IP.CreditLimit < 0
+                         OR (IP.MinWager IS NOT NULL AND IP.MaxWager IS NOT NULL AND IP.MinWager > IP.MaxWager)
+                         OR (IP.OnlineMinWager IS NOT NULL AND IP.OnlineMaxWager IS NOT NULL AND IP.OnlineMinWager > IP.OnlineMaxWager));",
+                connection))
+            {
+                command.CommandType = CommandType.Text;
+                command.CommandTimeout = 300;
+                command.Parameters.Add("@IdImportHierarchy", SqlDbType.BigInt).Value = idImportHierarchy;
+                command.Parameters.Add("@DuplicateAffixMode", SqlDbType.VarChar, 10).Value = duplicateAffixMode;
+                command.Parameters.Add("@DuplicateAffix", SqlDbType.VarChar, 6).Value = duplicateAffix;
+                command.Parameters.Add("@TemplateMinWager", SqlDbType.Money).Value = templateMinWager;
+                command.Parameters.Add("@TemplateMaxWager", SqlDbType.Money).Value = templateMaxWager;
+                command.Parameters.Add("@TemplateOnlineMinWager", SqlDbType.Money).Value = templateOnlineMinWager;
+                command.Parameters.Add("@TemplateOnlineMaxWager", SqlDbType.Money).Value = templateOnlineMaxWager;
+
+                connection.Open();
+                command.ExecuteNonQuery();
+            }
+        }
+
+        private int GetBatchPlayerClone(long idImportHierarchy)
+        {
+            using (SqlConnection connection = CreateAddOnsConnection())
+            using (SqlCommand command = new SqlCommand(
+                @"SELECT IdPlayerClone
+                  FROM dbo.ImportHierarchyBatch
+                  WHERE IdImportHierarchy = @IdImportHierarchy;",
+                connection))
+            {
+                command.CommandType = CommandType.Text;
+                command.Parameters.Add("@IdImportHierarchy", SqlDbType.BigInt).Value = idImportHierarchy;
+                connection.Open();
+                object value = command.ExecuteScalar();
+                if (value == null || value == DBNull.Value)
+                    throw new ApplicationException("The import batch was not found.");
+
+                return Convert.ToInt32(value, CultureInfo.InvariantCulture);
+            }
+        }
+
+        private void GetPlayerTemplateWagers(
+            int idPlayer,
+            out decimal minWager,
+            out decimal maxWager,
+            out decimal onlineMinWager,
+            out decimal onlineMaxWager)
+        {
+            using (SqlConnection connection = CreateDgsDataConnection())
+            using (SqlCommand command = new SqlCommand(
+                @"SELECT MinWager, MaxWager, OnlineMinWager, OnlineMaxWager
+                  FROM dbo.PLAYER
+                  WHERE IdPlayer = @IdPlayer;",
+                connection))
+            {
+                command.CommandType = CommandType.Text;
+                command.Parameters.Add("@IdPlayer", SqlDbType.Int).Value = idPlayer;
+
+                connection.Open();
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    if (!reader.Read())
+                        throw new ApplicationException("The selected player template was not found.");
+
+                    minWager = Convert.ToDecimal(reader["MinWager"], CultureInfo.InvariantCulture);
+                    maxWager = Convert.ToDecimal(reader["MaxWager"], CultureInfo.InvariantCulture);
+                    onlineMinWager = Convert.ToDecimal(reader["OnlineMinWager"], CultureInfo.InvariantCulture);
+                    onlineMaxWager = Convert.ToDecimal(reader["OnlineMaxWager"], CultureInfo.InvariantCulture);
+                }
+            }
         }
 
         private void UpdateAgent(
