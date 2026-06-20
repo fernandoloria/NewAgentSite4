@@ -648,6 +648,7 @@
     <Content Include="Popup\PlayerPayment.aspx" />
     <Content Include="Report\AgentDistributionEnhanced.aspx" />
     <Content Include="Report\LockScreen.aspx" />
+    <Content Include="Report\EVSharpness.aspx" />
     <Content Include="Report\SharpAnalysis.aspx" />
     <Content Include="src\.DS_Store" />
     <Content Include="src\assets\bootstrap-datepicker\bootstrap-datepicker.min.css" />
@@ -6043,9 +6044,16 @@
     <Compile Include="Report\PlayerWeeklyProfit.aspx.designer.cs">
       <DependentUpon>PlayerWeeklyProfit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Report\EVSharpness.aspx.cs">
+      <DependentUpon>EVSharpness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Report\SharpAnalysis.aspx.cs">
       <DependentUpon>SharpAnalysis.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\EVSharpness.aspx.designer.cs">
+      <DependentUpon>EVSharpness.aspx</DependentUpon>
     </Compile>
     <Compile Include="Report\SharpAnalysis.aspx.designer.cs">
       <DependentUpon>SharpAnalysis.aspx</DependentUpon>
