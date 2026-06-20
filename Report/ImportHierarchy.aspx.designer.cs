@@ -31,7 +31,10 @@ namespace AgentSite4.Report
         protected global::System.Web.UI.WebControls.Label lblInvalidPlayers;
         protected global::System.Web.UI.WebControls.Label lblDuplicatePlayers;
         protected global::System.Web.UI.WebControls.Label lblBatchId;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDuplicateAffixMode;
+        protected global::System.Web.UI.WebControls.TextBox txtDuplicateAffix;
         protected global::System.Web.UI.WebControls.Button btnRevalidate;
+        protected global::System.Web.UI.WebControls.Button btnMassFix;
         protected global::System.Web.UI.WebControls.Button btnNewImport;
         protected global::System.Web.UI.WebControls.Button btnShowDuplicates;
         protected global::System.Web.UI.WebControls.Button btnShowRowsToFix;
